@@ -87,18 +87,31 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-nav .wrapper{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
+   .wrapper{
+    max-width:960px;
+    margin:0 auto;
+  }
 
-.nav-links{
-  display:flex;
-  justify-content:space-between;
-  width: 100%;  
-}
+  nav{
+    background-color:green;
+  }
+
+   nav .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+  }
+  nav a:hover{
+    border: 1px solid red;
+    color: red;
+  }
   
 
 

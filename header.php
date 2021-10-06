@@ -30,7 +30,7 @@
         <div class="wrapper">
             <h1></h1>
             <div class="nav-links">
-                <a href="#">Home</a>
+                <a href="<?php echo $base_url; ?>/index.php">Home</a>
                 <a href="#">Songs</a>
                 <a href="#">Films</a>
                 <a href="#">Tools</a>
