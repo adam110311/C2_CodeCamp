@@ -33,7 +33,7 @@
   echo $date;
   ?>
 
-  <p>Hello world! This is HTML583724 Boilerplate.</p>
+  <p>Hello world! This is HTML5 12345.</p>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
