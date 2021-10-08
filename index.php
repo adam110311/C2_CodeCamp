@@ -26,6 +26,12 @@
 <?php require_once 'header.php'; ?>
 
   <!-- Add your site or application content here -->
+
+  <?php    
+  $date = date("Y-m-d H:i:s");
+  echo $date;
+  ?>
+
   <p>Hello world! This is HTML5 Boilerplate.</p>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
