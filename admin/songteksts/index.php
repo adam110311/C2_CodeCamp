@@ -27,12 +27,10 @@
 <?php include_once 'footer.php'; ?>
 
   <!-- Add your site or application content here -->
-  <div class="content">
-    <a href="/SongList.php"><img src="img/BingBong_Theurum.PNG" alt="bing bong theurum"></a>
-    <a href="/ToolList.php"><img src="img/BingBong_Theurum.PNG" alt="bing bong theurum"></a>
-    <a href="/FilmList.php"><img src="img/BingBong_Theurum.PNG" alt="bing bong theurum"></a>
-    <a href="/BookList.php"><img src="img/BingBong_Theurum.PNG" alt="bing bong theurum"></a>
-  </div>
+
+  
+
+  <p>Hello world! This is HTML5 12345.</p>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
