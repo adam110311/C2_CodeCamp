@@ -87,7 +87,19 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+  }
 
+  .content img{
+    width: 50%;
+    height: fit-content;
+    border: #000 solid;
+  }
    .wrapper{
     max-width:960px;
     margin:0 auto;
@@ -102,7 +114,7 @@ textarea {
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .nav-links{
     display:flex;
     justify-content:space-between;
@@ -112,7 +124,7 @@ textarea {
     border: 1px solid red;
     color: red;
   }
-  
+
 
 
 

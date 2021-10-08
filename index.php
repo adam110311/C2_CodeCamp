@@ -26,7 +26,12 @@
 <?php require_once 'header.php'; ?>
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <div class="content">
+    <a href="/SongList.php"><img src="img/BingBong_Theurum.PNG" alt="bing bong theurum"></a>
+    <a href="/ToolList.php"><img src="img/BingBong_Theurum.PNG" alt="bing bong theurum"></a>
+    <a href="/FilmList.php"><img src="img/BingBong_Theurum.PNG" alt="bing bong theurum"></a>
+    <a href="/BookList.php"><img src="img/BingBong_Theurum.PNG" alt="bing bong theurum"></a>
+  </div>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
