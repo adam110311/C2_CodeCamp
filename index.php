@@ -25,6 +25,10 @@
 <body>
 <?php require_once 'header.php'; ?>
 <?php include_once 'footer.php'; ?>
+<?php    
+$date = date("Y-m-d H:i:s");
+echo $date;
+?>
 
   <!-- Add your site or application content here -->
   <div class="content">
