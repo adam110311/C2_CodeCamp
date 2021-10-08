@@ -112,6 +112,10 @@ textarea {
     border: 1px solid red;
     color: red;
   }
+  footer{
+    background-color: rgb(156, 190, 156);
+    margin-top: 40px;
+  }
   
 
 
