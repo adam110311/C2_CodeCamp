@@ -30,10 +30,10 @@ SET time_zone = "+00:00";
 CREATE TABLE `content` (
   `id` int(11) NOT NULL,
   `contenttype` varchar(255) NOT NULL,
-  `naam` varchar(255) NOT NULL,
-  `beschrijving` text NOT NULL,
-  `acteurs` varchar(1000) DEFAULT NULL,
-  `kleurcode` varchar(255) DEFAULT NULL
+  `name` varchar(255) NOT NULL,
+  `description` text NOT NULL,
+  `actors` varchar(1000) DEFAULT NULL,
+  `colorcode` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
