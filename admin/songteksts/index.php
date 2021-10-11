@@ -23,21 +23,13 @@
 </head>
 
 <body>
+<?php require_once 'header.php'; ?>
+<?php include_once 'footer.php'; ?>
 
   <!-- Add your site or application content here -->
-<header>
-    <nav>
-        <div class="wrapper">
-            <h1></h1>
-            <div class="nav-links">
-                <a href="<?php echo $base_url; ?>/index.php">Home</a>
-                <a href="#">Songs</a>
-                <a href="#">Films</a>
-                <a href="#">Tools</a>
-        </div>
-    </nav>
-</header>
 
+
+  <p>Hello world! This is HTML5 12345.</p>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
