@@ -27,8 +27,8 @@
             <div class="Content">
                 <?php foreach ($contents as $content): ?>
                 <div class="Tools">
-                  <h2 class="naam"><?php echo $content['naam']?></h2>
-                  <p class="beschrijving"><?php echo $content['beschrijving']?></p>
+                  <h2 class="naam"><?php echo $content['name']?></h2>
+                  <p class="beschrijving"><?php echo $content['description[songtekst]']?></p>
                 </div>
                 <?php endforeach; ?>
             </div>
