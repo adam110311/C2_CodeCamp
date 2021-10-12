@@ -39,12 +39,9 @@
     <div class="container_content">
         <main>
             <div class="Content">
-                <?php foreach ($contents as $content): ?>
-                <div class="SongText">
-                  <h2> <?php echo $content['name']?></h2>
-                  <p>  <?php echo $content['description']?></p>
-                </div>
-                <?php endforeach; ?>
+                <?php echo $contents['name']?>
+                <?php echo $contents['actors']?>
+                <?php echo $contents['description[songtekst]']?>
             </div>
         </main>
         <?php require_once '../footer.php'; ?>
