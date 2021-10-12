@@ -86,7 +86,6 @@
   /* ==========================================================================
      Author's custom styles
      ========================================================================== */
-
      .content{
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -95,7 +94,14 @@
       grid-row-gap: 50px;
       text-align: center;
     }
-
+     .Content{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-column-gap: 50px;
+      grid-row-gap: 50px;
+      text-align: center;
+     }
     .content img{
       width: 50%;
       height: fit-content;
