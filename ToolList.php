@@ -27,8 +27,8 @@
             <div class="Content">
                 <?php foreach ($contents as $content): ?>
                 <div class="Tools">
-                  <h2 class="naam"><?php echo $content['name']?></h2>
-                  <p class="beschrijving"><?php echo $content['description[songtekst]']?></p>
+                <h2 class="name"><?php echo $content['name'];?></h2>
+                  <a href="<?php echo $base_url."/songteksts/index.php?id=".$content['id']; ?>">Text</a>
                 </div>
                 <?php endforeach; ?>
             </div>
