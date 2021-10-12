@@ -28,27 +28,11 @@
 
   <!-- Add your site or application content here -->
 
-  <?php
-            $id = $_GET['id'];
-            $query = "SELECT * FROM content WHERE id = $id ";
-            $statement = $conn->prepare($query);
-            $statement->execute();
-            $contents = $statement->fetch(PDO::FETCH_ASSOC);
-  ?>
-    <?php require_once 'header.php'; ?>
-    <div class="container_content">
-        <main>
-            <div class="Content">
-                <?php foreach ($contents as $content): ?>
-                <div class="SongText">
-                  <h2 class="name"><?php echo $content['name']?></h2>
-                  <p  class="bescription"><?php echo $content['description']?></p>
-                </div>
-                <?php endforeach; ?>
-            </div>
-        </main>
-        <?php require_once 'footer.php'; ?>
-    </div>
+
+  <p>Hello world! This is HTML5 12345.</p>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

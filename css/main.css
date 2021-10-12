@@ -93,6 +93,7 @@ textarea {
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 50px;
     grid-row-gap: 50px;
+    text-align: center;
   }
 
   .content img{

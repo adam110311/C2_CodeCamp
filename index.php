@@ -25,14 +25,14 @@
 <body>
 <?php require_once 'header.php'; ?>
 
-<?php    
+<?php
 $date = date("Y-m-d H:i:s");
 echo $date;
 ?>
 
   <!-- Add your site or application content here -->
   <div class="content">
-    <a href="/SongList.php"><img src="img/BingBong_Theurum.PNG" alt="bing bong theurum"></a>
+    <a href="SongList.php"><img src="img/BingBong_Theurum.PNG" alt="bing bong theurum"></a>
     <a href="/ToolList.php"><img src="img/BingBong_Theurum.PNG" alt="bing bong theurum"></a>
     <a href="/FilmList.php"><img src="img/BingBong_Theurum.PNG" alt="bing bong theurum"></a>
     <a href="/BookList.php"><img src="img/BingBong_Theurum.PNG" alt="bing bong theurum"></a>
