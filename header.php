@@ -34,7 +34,7 @@
                 <a href="SongList.php">Songs</a>
                 <a href="FilmList.php">Films</a>
                 <a href="ToolList.php">Tools</a>
-                <a href="#">imdb</a>
+                <a href="https://www.imdb.com/">imdb</a>
         </div>
     </nav>
 </header>
