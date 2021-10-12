@@ -23,31 +23,31 @@
 </head>
 
 <body>
-<?php require_once 'header.php'; ?>
-<?php include_once 'footer.php'; ?>
+
 
   <!-- Add your site or application content here -->
 
   <?php
-            $id = $_GET['id'];
-            $query = "SELECT * FROM content WHERE id = $id ";
-            $statement = $conn->prepare($query);
-            $statement->execute();
-            $contents = $statement->fetch(PDO::FETCH_ASSOC);
+    $id = $_GET['id'];
+    require_once '../admin/backend/conn.php';
+    $query = "SELECT * FROM content WHERE id = $id";
+    $statement = $conn->prepare($query);
+    $statement->execute();
+    $contents = $statement->fetch(PDO::FETCH_ASSOC);
   ?>
-    <?php require_once 'header.php'; ?>
+    <?php require_once '../header.php'; ?>
     <div class="container_content">
         <main>
             <div class="Content">
                 <?php foreach ($contents as $content): ?>
                 <div class="SongText">
-                  <h2 class="name"><?php echo $content['name']?></h2>
-                  <p  class="bescription"><?php echo $content['description']?></p>
+                  <h2> <?php echo $content['name']?></h2>
+                  <p>  <?php echo $content['description']?></p>
                 </div>
                 <?php endforeach; ?>
             </div>
         </main>
-        <?php require_once 'footer.php'; ?>
+        <?php require_once '../footer.php'; ?>
     </div>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
