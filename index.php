@@ -22,15 +22,19 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
+<!-- using header from header.php -->
 <body>
 <?php require_once 'header.php'; ?>
 
+<!-- you can see the time on the page -->
 <?php
 $date = date("Y-m-d H:i:s");
 echo $date;
 ?>
 
   <!-- Add your site or application content here -->
+
+  <!-- img with link to the pages-->
   <div class="content">
     <a href="SongList.php"><img src="img/BingBong_Theurum.PNG" alt="bing bong theurum"></a>
     <a href="ToolList.php"><img src="img/BingBong_Theurum.PNG" alt="bing bong theurum"></a>

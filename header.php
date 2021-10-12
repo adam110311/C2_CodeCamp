@@ -28,7 +28,7 @@
 <header>
     <nav>
         <div class="wrapper">
-            <h1></h1>
+            <!-- header with link and making sure you can go back using the header-->
             <div class="nav-links">
                 <a href="<?php echo $base_url; ?>/index.php">Home</a>
                 <a href="SongList.php">Songs</a>

@@ -22,6 +22,7 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
+<!-- you can see the header and footer on the page -->
 <body>
 <?php require_once 'header.php'; ?>
 <?php include_once 'footer.php'; ?>
