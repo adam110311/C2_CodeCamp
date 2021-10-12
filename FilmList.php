@@ -16,7 +16,7 @@
 
     <?php
     require_once 'admin/backend/conn.php';
-    $query = "SELECT * FROM content";
+    $query = "SELECT * FROM content WHERE contenttype='movie'";
     $stmt = $conn->prepare($query);
     $stmt->execute();
     $contents = $stmt->fetchAll(PDO::FETCH_ASSOC);
