@@ -31,9 +31,10 @@
             <h1></h1>
             <div class="nav-links">
                 <a href="<?php echo $base_url; ?>/index.php">Home</a>
-                <a href="#">Songs</a>
-                <a href="#">Films</a>
-                <a href="#">Tools</a>
+                <a href="SongList.php">Songs</a>
+                <a href="FilmList.php">Films</a>
+                <a href="ToolList.php">Tools</a>
+                <a href="#">imdb</a>
         </div>
     </nav>
 </header>
