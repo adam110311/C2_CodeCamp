@@ -13,7 +13,7 @@
 </head>
 
 <body>
-
+    <!--hier begint het query om de data op te roepen-->
     <?php
     require_once 'admin/backend/conn.php';
     $query = "SELECT * FROM content WHERE contenttype='songtekst'";
@@ -21,7 +21,9 @@
     $stmt->execute();
     $contents = $stmt->fetchAll(PDO::FETCH_ASSOC);
     ?>
+    <!--hier eindigt het query om de data op te roepen-->
     <?php require_once 'header.php'; ?>
+    <!--hier word de data in een leesbaar formaat gezet-->
     <div class="container_content">
         <main>
             <div class="Content">
@@ -35,6 +37,7 @@
         </main>
 
     </div>
+    <!--tot hier word de data in een leesbaar formaat gezet-->
     <?php require_once 'footer.php'; ?>
 </body>
 

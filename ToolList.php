@@ -13,15 +13,17 @@
 </head>
 
 <body>
-
+    <!--hier word de data in een leesbaar formaat gezet-->
     <?php
     require_once 'admin/backend/conn.php';
-    $query = "SELECT * FROM content";
+    $query = "SELECT * FROM content WHERE contenttype='tools'";
     $stmt = $conn->prepare($query);
     $stmt->execute();
     $contents = $stmt->fetchAll(PDO::FETCH_ASSOC);
     ?>
+    <!--hier eindigt het query om de data op te roepen-->
     <?php require_once 'header.php'; ?>
+    <!--hier word de data in een leesbaar formaat gezet-->
     <div class="container_content">
         <main>
             <div class="Content">
@@ -35,7 +37,7 @@
         </main>
         <?php require_once 'footer.php'; ?>
     </div>
-
+    <!--tot hier word de data in een leesbaar formaat gezet-->
 </body>
 
 </html>

@@ -13,20 +13,22 @@
 </head>
 
 <body>
-
+    <!--hier begint het query om de data op te roepen-->
     <?php
     require_once 'admin/backend/conn.php';
-    $query = "SELECT * FROM content";
+    $query = "SELECT * FROM content WHERE contenttype='book'";
     $stmt = $conn->prepare($query);
     $stmt->execute();
     $contents = $stmt->fetchAll(PDO::FETCH_ASSOC);
     ?>
+    <!--hier eindigt het query om de data op te roepen-->
     <?php require_once 'header.php'; ?>
+    <!--hier word de data in een leesbaar formaat gezet-->
     <div class="container_content">
         <main>
             <div class="Content">
                 <?php foreach ($contents as $content): ?>
-                <div class=Books">
+                <div class="Books">
                   <h2 class="naam"><?php echo $content['name']?></h2>
                   <a href="<?php echo $base_url."/songteksts/index.php?id=".$content['id']; ?>">description</a>
                 </div>
@@ -35,6 +37,7 @@
         </main>
         <?php require_once 'footer.php'; ?>
     </div>
+    <!--tot hier word de data in een leesbaar formaat gezet-->
 
 </body>
 
