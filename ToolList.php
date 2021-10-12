@@ -16,7 +16,7 @@
 
     <?php
     require_once 'admin/backend/conn.php';
-    $query = "SELECT * FROM content";
+    $query = "SELECT * FROM content WHERE contenttype='tools'";
     $stmt = $conn->prepare($query);
     $stmt->execute();
     $contents = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -28,7 +28,7 @@
                 <?php foreach ($contents as $content): ?>
                 <div class="Tools">
                   <h2 class="naam"><?php echo $content['name']?></h2>
-                  <a href="<?php echo $base_url."/songteksts/index.php?id=".$content['id']; ?>">description</a>
+                  <a href="<?php echo $base_url."/ToolList/index.php?id=".$content['id']; ?>">description</a>
                 </div>
                 <?php endforeach; ?>
             </div>
