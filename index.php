@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>c2_campcode</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,11 +20,21 @@
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+
+
 </head>
 
 <!-- using header from header.php -->
 <body>
   <?php require_once 'header.php'; ?>
+  <?php
+  session_start();
+  require_once 'admin/backend/config.php';
+  if(isset($_SESSION['user_id']))
+  {
+      echo("Je bent ingelogd!");
+  }
+  ?>
 
   <!-- you can see the time on the page -->
   <script type="text/javascript">
@@ -53,6 +63,16 @@
     <a href="ToolList.php"><img src="img/BingBong_Theurum.PNG" alt="bing bong theurum"></a>
     <a href="FilmList.php"><img src="img/BingBong_Theurum.PNG" alt="bing bong theurum"></a>
     <a href="BookList.php"><img src="img/BingBong_Theurum.PNG" alt="bing bong theurum"></a>
+    <a href="logout.php">logout</a>
+    <a href="login.php">login</a>
+    <?php
+    if(isset($_SESSION['user_id']) && ($_SESSION['admin']) != false)
+    {
+      ?>
+      <a href="<?php echo $baseurl; ?>#.php">administration</a>
+      <?php
+    }
+    ?>
   </div>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
