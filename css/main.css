@@ -17,6 +17,12 @@
     line-height: 1.4;
   }
 
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+  * {
+    font-family: 'Roboto', sans-serif;
+  }
+
   /*
    * Remove text-shadow in selection highlight:
    * https://twitter.com/miketaylr/status/12228805301
