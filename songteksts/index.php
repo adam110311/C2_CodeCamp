@@ -15,9 +15,9 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <?php include_once "../backend/config.php";?>
+  <link rel="stylesheet" href="<?php echo $baseurl; ?>css/normalize.css">
+  <link rel="stylesheet" href="<?php echo $baseurl; ?>css/main.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -37,7 +37,7 @@
   ?>
     <?php require_once '../header.php'; ?>
     <div class="container_content">
-        <main>
+        <main <?php if($contents['colorcode']) echo "style='background: " . str_replace("\'", "\\\'", str_replace('\"', "\\\"", $contents['colorcode'])) . ";'"; ?>>
             <div class="Content">
                 <?php echo $contents['name']?>
                 <?php echo $contents['actors']?>

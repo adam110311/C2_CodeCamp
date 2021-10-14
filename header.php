@@ -30,10 +30,11 @@
         <div class="wrapper">
             <!-- header with link and making sure you can go back using the header-->
             <div class="nav-links">
-                <a href="<?php echo $base_url; ?>/index.php">Home</a>
-                <a href="SongList.php">Songs</a>
-                <a href="FilmList.php">Films</a>
-                <a href="ToolList.php">Tools</a>
+              <?php require_once "backend/config.php"; ?>
+                <a href="<?php echo $baseurl; ?>index.php">Home</a>
+                <a href="<?php echo $baseurl; ?>SongList.php">Songs</a>
+                <a href="<?php echo $baseurl; ?>FilmList.php">Films</a>
+                <a href="<?php echo $baseurl; ?>ToolList.php">Tools</a>
                 <a href="https://www.imdb.com/">imdb</a>
         </div>
     </nav>
