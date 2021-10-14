@@ -24,25 +24,26 @@
 
 <!-- using header from header.php -->
 <body>
-<?php require_once 'header.php'; ?>
+  <?php require_once 'header.php'; ?>
 
-<!-- you can see the time on the page -->
-<script type="text/javascript"> 
-function display_c(){
-var refresh=1000; // Refresh rate in milli seconds
-mytime=setTimeout('display_ct()',refresh)
-}
+  <!-- you can see the time on the page -->
+  <script type="text/javascript">
+    function display_c() {
+      var refresh = 1000; // Refresh rate in milli seconds
+      mytime = setTimeout('display_ct()', refresh)
+    }
 
-function display_ct() {
-  var x = new Date()
-var x1=x.getMonth() + 1+ "/" + x.getDate() + "/" + x.getFullYear(); 
-x1 = x1 + " - " +  x.getHours( )+ ":" +  x.getMinutes() + ":" +  x.getSeconds();
-document.getElementById('ct').innerHTML = x1;
-display_c();
- }
-</script>
-<body onload=display_ct();>
-<span id='ct' ></span>
+    function display_ct() {
+      var x = new Date()
+      var x1 = x.getMonth() + 1 + "/" + x.getDate() + "/" + x.getFullYear();
+      x1 = x1 + " - " + x.getHours() + ":" + x.getMinutes() + ":" + x.getSeconds();
+      document.getElementById('ct').innerHTML = x1;
+      display_c();
+    }
+  </script>
+
+  <body onload=display_ct();>
+    <span id='ct'></span>
 
   <!-- Add your site or application content here -->
 
