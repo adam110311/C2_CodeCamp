@@ -35,7 +35,34 @@
                 <a href="<?php echo $baseurl; ?>SongList.php">Songs</a>
                 <a href="<?php echo $baseurl; ?>FilmList.php">Films</a>
                 <a href="<?php echo $baseurl; ?>ToolList.php">Tools</a>
-                <a href="https://www.imdb.com/">imdb</a>                
+                <a href="https://www.imdb.com/">imdb</a>                             
+                <?php
+                session_start();
+                if(isset($_SESSION['user_id']))
+                {
+                  ?>
+                  <a href="<?php echo $baseurl; ?>logout.php">logout</a>
+                  <?php
+                }
+                ?>
+                <?php
+                if(!isset($_SESSION['user_id']))
+                {
+                  ?>
+                  <a href="<?php echo $baseurl; ?>login.php">login</a>
+                  <?php
+                }
+                ?>
+                <a href="signup.php">registeer</a>
+                <?php
+                if(isset($_SESSION['user_id']) && ($_SESSION['admin']) == true)
+                {
+                  ?>
+                  <a href="<?php echo $baseurl; ?>#.php">administration</a>
+                  <?php
+                }
+                ?> 
+            </div>          
         </div>
     </nav>
 </header>

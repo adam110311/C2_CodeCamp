@@ -28,13 +28,7 @@
 <body>
   <?php require_once 'header.php'; ?>
   <?php
-  session_start();
   require_once 'admin/backend/config.php';
-  if(isset($_SESSION['user_id']))
-  {
-    echo "hallo " . $_SESSION['user_name'] . ", u bent ingelogd";
-
-  }
   ?>
 
   <!-- you can see the time on the page -->
