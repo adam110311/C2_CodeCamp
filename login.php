@@ -1,7 +1,6 @@
 <!doctype html>
 
 <?php
-session_start();
 require_once 'admin/backend/config.php';
 ?>
 <html class="no-js" lang="">

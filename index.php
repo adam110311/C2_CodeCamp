@@ -28,13 +28,7 @@
 <body>
   <?php require_once 'header.php'; ?>
   <?php
-  session_start();
   require_once 'admin/backend/config.php';
-  if(isset($_SESSION['user_id']))
-  {
-    echo "hallo " . $_SESSION['user_name'] . ", u bent ingelogd";
-
-  }
   ?>
 
   <!-- you can see the time on the page -->
@@ -65,31 +59,6 @@
     <a href="ToolList.php"><img src="img/tools.jpeg" alt="bing bong theurum"></a>
     <a href="FilmList.php"><img src="img/films.jpeg" alt="bing bong theurum"></a>
     <a href="BookList.php"><img src="img/book.jpeg" alt="bing bong theurum"></a>
-    <?php
-    if(isset($_SESSION['user_id']))
-    {
-      ?>
-      <a href="<?php echo $baseurl; ?>logout.php">logout</a>
-      <?php
-    }
-    ?>
-    <?php
-    if(!isset($_SESSION['user_id']))
-    {
-      ?>
-      <a href="<?php echo $baseurl; ?>login.php">login</a>
-      <?php
-    }
-    ?>
-    <a href="signup.php">registeer</a>
-    <?php
-    if(isset($_SESSION['user_id']) && ($_SESSION['admin']) == true)
-    {
-      ?>
-      <a href="<?php echo $baseurl; ?>#.php">administration</a>
-      <?php
-    }
-    ?>
   </div>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
