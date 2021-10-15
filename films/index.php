@@ -40,7 +40,20 @@
         <main <?php if($contents['colorcode']) echo "style='background: " . str_replace("\'", "\\\'", str_replace('\"', "\\\"", $contents['colorcode'])) . ";'"; ?>>
             <div class="Contentinfo">
                 <?php echo "<h1 class='title'>".$contents['name']."</h1>";
-                echo $contents['description[songtekst]'];?>
+                echo $contents['description[songtekst]'];//ik vind het nog steeds stom dat het zo heet
+                if($contents['actors']){
+                  echo "<ul>";
+                  foreach(explode(", ", $contents['actors']) as $actor){?>
+                  <?php 
+                  $query = "SELECT * FROM content WHERE id = :id";
+                  $statement = $conn->prepare($query);
+                  $statement->execute([":id" => $actor]);
+                  $contents = $statement->fetch(PDO::FETCH_ASSOC);
+                  ?>
+                    <li><a href="<?php echo($base_url."/films/acteur.php?id=".$actor) ?>"><?php echo($contents['name']); ?></a></li>
+                  <?php } ?>
+                  </ul>
+                <?php } ?>
             </div>
         </main>
         <?php require_once '../footer.php'; ?>
