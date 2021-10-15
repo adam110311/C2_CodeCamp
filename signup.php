@@ -25,15 +25,27 @@
 </head>
 <body>
     <?php require_once 'header.php'; ?>
-
-    <section class="signup-form">
-        <h2>registreren</h2>
-        <form action="admin/backend/signupController.php" method="POST">
-            <input type="text" name="username" placeholder="username">
-            <input type="text" name="email" placeholder="email">
-            <input type="password" name="password" placeholder="password">
-            <button type="submit" name="submit">registreer</button>
-        </form>
-    </section>
+    <div class="login">
+        <section class="signup-form">
+            <h2>registreren</h2>
+            <form action="admin/backend/signupController.php" method="POST">
+                <div class="form-group">
+                    <label for="username">Gebruikersnaam:</label>
+                    <input type="text" name="username" placeholder="username">
+                </div>
+                <div class="form-group">
+                    <label for="email">email:</label>
+                    <input type="text" name="email" placeholder="email">
+                </div>
+                <div class="form-group">
+                    <label for="wachtwoord">wachtwoord:</label>
+                    <input type="password" name="password" placeholder="password">
+                </div>
+                <div class="form-group">
+                    <button type="submit" name="submit">registreer</button>
+                </div>                
+            </form>
+        </section>
+    </div>
     <?php require_once 'footer.php'; ?>
 </body>

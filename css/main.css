@@ -151,6 +151,39 @@
       text-decoration: none;
     }
 
+    /* 
+    
+    
+    
+    
+    added new 
+    
+    
+    
+    
+    */
+
+    .login-form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .form-group{
+      margin: 1rem 0;
+    }
+
+    .login{
+      display: flex;
+      justify-content: center;
+    }
+
+    .form-group{      
+      display: flex;
+      flex-direction: column;
+    }
+
 
 
 
