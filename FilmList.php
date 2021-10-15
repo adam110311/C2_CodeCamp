@@ -30,10 +30,13 @@
                 <?php foreach ($contents as $content): ?>
                 <div class="Film">
                   <h2 class="naam"><?php echo $content['name']?></h2>
-                  <a href="<?php echo $base_url."/FilmList/index.php?id=".$content['id']; ?>">description</a>
+                  <a href="<?php echo $base_url."/songteksts/index.php?id=".$content['id']; ?>">description</a>
                 </div>
                 <?php endforeach; ?>
             </div>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
         </main>
         <?php require_once 'footer.php'; ?>
     </div>
