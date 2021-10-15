@@ -2,7 +2,7 @@
 
 <?php
 session_start();
-require_once 'backend/config.php';
+require_once 'admin/backend/config.php';
 ?>
 <html class="no-js" lang="">
 
