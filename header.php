@@ -62,8 +62,7 @@
                   <?php
                 }
                 ?> 
-            </div>          
->>>>>>> 19afd2c4e81d1ce2ec64d7bccd2063b35f45b2fc
+            </div>
         </div>
     </nav>
 </header>
