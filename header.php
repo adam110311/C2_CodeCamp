@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!doctype html>
 <html class="no-js" lang="">
 
@@ -35,7 +36,34 @@
                 <a href="<?php echo $baseurl; ?>SongList.php">Songs</a>
                 <a href="<?php echo $baseurl; ?>FilmList.php">Films</a>
                 <a href="<?php echo $baseurl; ?>ToolList.php">Tools</a>
-                <a href="<?php echo $baseurl; ?>ActorList.php">imdb</a>                
+                <a href="<?php echo $baseurl; ?>ActorList.php">imdb</a>                          
+                <?php
+                if(isset($_SESSION['user_id']))
+                {
+                  ?>
+                  <a href="<?php echo $baseurl; ?>logout.php">logout</a>
+                  <?php
+                }
+                ?>
+                <?php
+                if(!isset($_SESSION['user_id']))
+                {
+                  ?>
+                  <a href="<?php echo $baseurl; ?>login.php">login</a>
+                  <?php
+                }
+                ?>
+                <a href="signup.php">registeer</a>
+                <?php
+                if(isset($_SESSION['user_id']) && ($_SESSION['admin']) == true)
+                {
+                  ?>
+                  <a href="<?php echo $baseurl; ?>#.php">administration</a>
+                  <?php
+                }
+                ?> 
+            </div>          
+>>>>>>> 19afd2c4e81d1ce2ec64d7bccd2063b35f45b2fc
         </div>
     </nav>
 </header>
