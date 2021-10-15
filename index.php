@@ -33,7 +33,7 @@
   if(isset($_SESSION['user_id']))
   {
     echo "hallo " . $_SESSION['user_name'] . ", u bent ingelogd";
-    
+
   }
   ?>
 
@@ -52,18 +52,19 @@
       display_c();
     }
   </script>
-
-  <body onload=display_ct();>
-    <span id='ct'></span>
-
+  <!-- The clock on the page -->
+  <div class="tijd">
+    <body onload=display_ct();>
+      <span id='ct'></span>
+  </div>
   <!-- Add your site or application content here -->
 
   <!-- img with link to the pages-->
   <div class="content">
-    <a href="SongList.php"><img src="img/BingBong_Theurum.PNG" alt="bing bong theurum"></a>
-    <a href="ToolList.php"><img src="img/BingBong_Theurum.PNG" alt="bing bong theurum"></a>
-    <a href="FilmList.php"><img src="img/BingBong_Theurum.PNG" alt="bing bong theurum"></a>
-    <a href="BookList.php"><img src="img/BingBong_Theurum.PNG" alt="bing bong theurum"></a>
+    <a href="SongList.php"><img src="img/songs.jpeg" alt="bing bong theurum"></a>
+    <a href="ToolList.php"><img src="img/tools.jpeg" alt="bing bong theurum"></a>
+    <a href="FilmList.php"><img src="img/films.jpeg" alt="bing bong theurum"></a>
+    <a href="BookList.php"><img src="img/book.jpeg" alt="bing bong theurum"></a>
     <?php
     if(isset($_SESSION['user_id']))
     {
