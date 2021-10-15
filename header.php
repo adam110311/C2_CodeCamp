@@ -50,18 +50,10 @@
                 {
                   ?>
                   <a href="<?php echo $baseurl; ?>login.php">login</a>
+                  <a href="signup.php">registeer</a>
                   <?php
                 }
                 ?>
-                <a href="signup.php">registeer</a>
-                <?php
-                if(isset($_SESSION['user_id']) && ($_SESSION['admin']) == true)
-                {
-                  ?>
-                  <a href="<?php echo $baseurl; ?>#.php">administration</a>
-                  <?php
-                }
-                ?> 
             </div>
         </div>
     </nav>
