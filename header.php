@@ -35,7 +35,7 @@
                 <a href="<?php echo $baseurl; ?>SongList.php">Songs</a>
                 <a href="<?php echo $baseurl; ?>FilmList.php">Films</a>
                 <a href="<?php echo $baseurl; ?>ToolList.php">Tools</a>
-                <a href="https://www.imdb.com/">imdb</a>                
+                <a href="<?php echo $baseurl; ?>ActorList.php">imdb</a>                
         </div>
     </nav>
 </header>
