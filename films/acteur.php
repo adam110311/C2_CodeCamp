@@ -30,9 +30,9 @@
   <?php
     $id = $_GET['id'];
     require_once '../admin/backend/conn.php';
-    $query = "SELECT * FROM content WHERE id = :id";
+    $query = "SELECT * FROM content WHERE id = $id";
     $statement = $conn->prepare($query);
-    $statement->execute([":id" => $id]);
+    $statement->execute();
     $contents = $statement->fetch(PDO::FETCH_ASSOC);
   ?>
     <?php require_once '../header.php'; ?>

@@ -147,13 +147,14 @@
     }
     footer{
       background-color: #2C4251;
-      margin-top: 40px;
+      position: fixed;
+      bottom: 0;
+      width: 100vw;
     }
     footer a{
       color: #fff;
       text-decoration: none;
     }
-
     /* 
     
     
@@ -187,16 +188,12 @@
       flex-direction: column;
     }
 
+    a{
+      color: black;
+      text-decoration: none;
+    }
 
 
-
-  /* ==========================================================================
-     Helper classes
-     ========================================================================== */
-
-  /*
-   * Hide visually and from screen readers
-   */
 
   .hidden,
   [hidden] {
