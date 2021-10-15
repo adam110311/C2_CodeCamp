@@ -32,7 +32,8 @@
   require_once 'admin/backend/config.php';
   if(isset($_SESSION['user_id']))
   {
-      echo("Je bent ingelogd!");
+    echo "hallo " . $_SESSION['user_name'] . ", u bent ingelogd";
+    
   }
   ?>
 
@@ -65,8 +66,9 @@
     <a href="BookList.php"><img src="img/BingBong_Theurum.PNG" alt="bing bong theurum"></a>
     <a href="logout.php">logout</a>
     <a href="login.php">login</a>
+    <a href="signup.php">registeer</a>
     <?php
-    if(isset($_SESSION['user_id']) && ($_SESSION['admin']) != false)
+    if(isset($_SESSION['user_id']) && ($_SESSION['admin']) == true)
     {
       ?>
       <a href="<?php echo $baseurl; ?>#.php">administration</a>
