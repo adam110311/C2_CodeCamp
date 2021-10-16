@@ -55,10 +55,18 @@
 
   <!-- img with link to the pages-->
   <div class="content">
-    <a href="SongList.php"><img src="img/songs.jpeg" alt="bing bong theurum"></a>
-    <a href="ToolList.php"><img src="img/tools.jpeg" alt="bing bong theurum"></a>
-    <a href="FilmList.php"><img src="img/films.jpeg" alt="bing bong theurum"></a>
-    <a href="BookList.php"><img src="img/book.jpeg" alt="bing bong theurum"></a>
+    <div class="links">
+      <a href="SongList.php"><img src="img/songs.jpeg" alt="bing bong theurum"></a>
+    </div>
+    <div class="links">  
+      <a href="ToolList.php"><img src="img/tools.jpeg" alt="bing bong theurum"></a>
+    </div>
+    <div class="links">    
+      <a href="FilmList.php"><img src="img/films.jpeg" alt="bing bong theurum"></a>
+    </div>
+    <div class="links">    
+      <a href="BookList.php"><img src="img/book.jpeg" alt="bing bong theurum"></a>
+      </div>
   </div>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>

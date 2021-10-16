@@ -135,11 +135,11 @@
       display:flex;
       justify-content:space-between;
       width:100%;
-
     }
     nav a{
       color: #fff;
       text-decoration: none;
+      border: 1px solid #2C4251;
     }
     nav a:hover{
       border: 1px solid #fff;
@@ -150,10 +150,17 @@
       position: fixed;
       bottom: 0;
       width: 100vw;
+      height: 25px;
     }
     footer a{
       color: #fff;
       text-decoration: none;
+    }
+
+    
+
+    footer img{
+      width:auto; height:25px;
     }
     /* 
     
@@ -198,6 +205,15 @@
   .hidden,
   [hidden] {
     display: none !important;
+  }
+
+  .links img{
+    border:solid black;
+  }
+
+  footer{
+    display: flex;
+    justify-content:space-around;
   }
 
   /*
