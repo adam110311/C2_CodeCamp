@@ -155,12 +155,24 @@
     footer a{
       color: #fff;
       text-decoration: none;
-    }
-
-    
+    }    
 
     footer img{
       width:auto; height:25px;
+    }
+
+    .container_content{
+      display: flex; 
+      justify-content: center; 
+      width: 50%; 
+      margin: 0 auto;
+    }
+
+    .Contentinfo{ 
+      display: flex; 
+      flex-direction: column; 
+      text-align: center;
+      justify-content: center;            
     }
     /* 
     
