@@ -44,7 +44,11 @@
                 <?php echo "<h1 class='title'>".$contents['name']."</h1>";
                 echo $contents['description[songtekst]'];?>
             </div>
-        </main>        
+            <?php if (isset($_SESSION['admin']) && $_SESSION['admin']){ ?>
+              <a href="../admin/edit.php?id=<?php echo $id; ?>">Kleur aanpassen</a>
+            <?php } ?>
+        </main>
+        <?php require_once '../footer.php'; ?>
     </div>
     <div class="websites">
       <a href="https://www.imdb.com/?ref_=nv_home"><h2>imdb</h2></a>
