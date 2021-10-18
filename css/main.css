@@ -154,6 +154,7 @@
       bottom: 0;
       width: 100vw;
       height: 25px;
+      left: 0;
     }
     .footer-links a{
       color: #fff;
@@ -163,7 +164,7 @@
     .footer-links img{
       width:auto; height:25px;
     }
-
+    
     .container_content{
       display: flex; 
       justify-content: center; 
