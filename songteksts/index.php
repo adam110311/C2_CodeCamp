@@ -51,9 +51,9 @@
         <?php require_once '../footer.php'; ?>
     </div>
     <div class="websites">
-      <a href="https://www.imdb.com/?ref_=nv_home"><h2>imdb</h2></a>
-      <a href="https://www.themovies.nl/"><h2>movies.nl</h2></a>
-      <a href="https://www.videoland.com/nl/"><h2>videoland</h2></a>
+      <a href="https://www.imdb.com/?ref_=nv_home">imdb</a>
+      <a href="https://www.themovies.nl/">movies.nl</a>
+      <a href="https://www.videoland.com/nl/">videoland</a>
     </div>
     <?php require_once '../footer.php'; ?>
 

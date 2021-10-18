@@ -16,7 +16,7 @@
     <!--hier begint het query om de data op te roepen-->
     <?php
     require_once 'admin/backend/conn.php';
-    $query = "SELECT * FROM content WHERE contenttype='acteur'";
+    $query = "SELECT * FROM content WHERE contenttype='songtekst'";
     $stmt = $conn->prepare($query);
     $stmt->execute();
     $contents = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -29,7 +29,7 @@
             <div class="Content">
                 <?php foreach ($contents as $content): ?>
                 <div class="Film">
-                    <a href="<?php echo $base_url."/acteurs/index.php?id=".$content['id']; ?>"><h2 class="name"><?php echo $content['name'];?></h2></a>
+                    <a href="<?php echo $base_url."/songteksts/index.php?id=".$content['id']; ?>"><h2 class="name"><?php echo $content['name'];?></h2></a>
                 </div>
                 <?php endforeach; ?>
             </div>
