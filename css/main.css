@@ -145,19 +145,22 @@
       border: 1px solid #fff;
       color: #fff;
     }
-    footer{
+    .footer-links{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
       background-color: #2C4251;
       position: fixed;
       bottom: 0;
       width: 100vw;
       height: 25px;
     }
-    footer a{
+    .footer-links a{
       color: #fff;
       text-decoration: none;
     }    
 
-    footer img{
+    .footer-links img{
       width:auto; height:25px;
     }
 

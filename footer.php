@@ -27,9 +27,11 @@
 </head>
 
 <footer>
+    <div class="footer-links">
         <a href="https://twitter.com/home?lang=nl"><img src="<?php echo $baseurl; ?>img/twitter.png" alt="twitter"></a>  
         <a href="https://www.facebook.com/Startpagina.nl/"><img src="<?php echo $baseurl; ?>img/facebook.jpg" alt="facebook"></a>  
         <a href="https://www.youtube.com/"><img src="<?php echo $baseurl; ?>img/youtube.jpg" alt="youtube"></a>  
         <a href="https://www.instagram.com/"><img src="<?php echo $baseurl; ?>img/instagram.png" alt="instagram"></a> 
-
+    </div> 
+    <p>&copy; 2021 CampCode</p>      
 </footer>
