@@ -50,7 +50,7 @@
                   $statement->execute([":id" => $actor]);
                   $contents = $statement->fetch(PDO::FETCH_ASSOC);
                   ?>
-                    <li><a href="<?php echo($base_url."/films/acteur.php?id=".$actor) ?>"><?php echo($contents['name']); ?></a></li>
+                    <li><a href="https://www.imdb.com/?ref_=nv_home"><?php echo($contents['name']); ?></a></li>
                   <?php } ?>
                   </ul>
                 <?php } ?>
