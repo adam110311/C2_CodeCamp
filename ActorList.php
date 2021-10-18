@@ -29,7 +29,7 @@
             <div class="Content">
                 <?php foreach ($contents as $content): ?>
                 <div class="Film">
-                    <a href="https://www.imdb.com/?ref_=nv_home"><h2 class="name"><?php echo $content['name'];?></h2></a>
+                    <a href="<?php echo $base_url."/acteurs/index.php?id=".$content['id']; ?>"><h2 class="name"><?php echo $content['name'];?></h2></a>
                 </div>
                 <?php endforeach; ?>
             </div>

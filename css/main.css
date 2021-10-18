@@ -190,6 +190,17 @@
       text-align: center;
       justify-content: center;  
     }
+
+    .drinks a{
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+
+    .drinks{
+      display: flex; 
+      text-align: center;
+      justify-content: center;  
+    }
     /* 
     
     

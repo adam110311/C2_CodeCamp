@@ -36,7 +36,8 @@
                 <a href="<?php echo $baseurl; ?>SongList.php">Songs</a>
                 <a href="<?php echo $baseurl; ?>FilmList.php">Films</a>
                 <a href="<?php echo $baseurl; ?>ToolList.php">Tools</a>
-                <a href="<?php echo $baseurl; ?>ActorList.php">Acteurs</a>                          
+                <a href="<?php echo $baseurl; ?>ActorList.php">Acteurs</a>     
+                <a href="<?php echo $baseurl; ?>Drinks.php">Dranken</a>                        
                 <?php
                 if(isset($_SESSION['user_id']))
                 {

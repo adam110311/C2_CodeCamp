@@ -14,12 +14,13 @@
 
 <body>
     <!--hier begint het query om de data op te roepen-->
+
     <?php
     require_once 'admin/backend/conn.php';
-    $query = "SELECT * FROM content WHERE contenttype='songtekst'";
+    $query = "SELECT * FROM drinks";
     $stmt = $conn->prepare($query);
     $stmt->execute();
-    $contents = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $drinks = $stmt->fetchAll(PDO::FETCH_ASSOC);
     ?>
     <!--hier eindigt het query om de data op te roepen-->
     <?php require_once 'header.php'; ?>
@@ -27,11 +28,19 @@
     <div class="container_content">
         <main>
             <div class="Content">
-                <?php foreach ($contents as $content): ?>
+                <?php foreach ($drinks as $drink): ?>
                 <div class="SongTexts">
-                    <a href="<?php echo $base_url."/songteksts/index.php?id=".$content['id']; ?>"><h2 class="name"><?php echo $content['name'];?></h2></a>
+                    <?php if($drink['name'] == "koffee"){
+                        ?><a href="ActorList.php"><h2 class="name"><?php echo $drink['name'];?></h2></a><?php     
+                    } else{ 
+                        ?><h2 class="name"><?php echo $drink['name'];?></h2><?php
+                    }?>
                 </div>
                 <?php endforeach; ?>
+            </div>
+            <div class="drinks">
+                <a href="drinks/WarmDrinks.php"><h2>warme dranken</h2></a>
+                <a href="drinks/SoftDrinks.php"><h2>frisdranks</h2></a>
             </div>
         </main>
 
