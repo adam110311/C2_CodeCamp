@@ -54,6 +54,9 @@
                   <?php } ?>
                   </ul>
                 <?php } ?>
+                <?php if (isset($_SESSION['admin']) && $_SESSION['admin']){ ?>
+              <a href="../admin/edit.php?id=<?php echo $id; ?>">Kleur aanpassen</a>
+            <?php } ?>
             </div>
         </main>
         <?php require_once '../footer.php'; ?>
