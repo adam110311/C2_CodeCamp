@@ -27,9 +27,9 @@
 </head>
 
 <footer>
-        <a href="https://twitter.com/home?lang=nl"><img src="img/twitter.png" alt="twitter"></a>  
-        <a href="https://www.facebook.com/Startpagina.nl/"><img src="img/facebook.jpg" alt="facebook"></a>  
-        <a href="https://www.youtube.com/"><img src="img/youtube.jpg" alt="youtube"></a>  
-        <a href="https://www.instagram.com/"><img src="img/instagram.png" alt="instagram"></a> 
+        <a href="https://twitter.com/home?lang=nl"><img src="<?php echo $baseurl; ?>img/twitter.png" alt="twitter"></a>  
+        <a href="https://www.facebook.com/Startpagina.nl/"><img src="<?php echo $baseurl; ?>img/facebook.jpg" alt="facebook"></a>  
+        <a href="https://www.youtube.com/"><img src="<?php echo $baseurl; ?>img/youtube.jpg" alt="youtube"></a>  
+        <a href="https://www.instagram.com/"><img src="<?php echo $baseurl; ?>img/instagram.png" alt="instagram"></a> 
 
 </footer>
