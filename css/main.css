@@ -243,7 +243,13 @@
     display: flex;
     justify-content:space-around;
     position: fixed;
-bottom: 0;
+    bottom: 0;
+  }
+
+  .footer p{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
   }
 
   /*
