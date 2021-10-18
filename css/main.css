@@ -145,23 +145,14 @@
       border: 1px solid #fff;
       color: #fff;
     }
-    footer p{
-      display: flex;
-      position: fixed;
-      background-color: #2C4251;
-      bottom: -15px;
-      width: 100vw;
-      height: 25px;
-      left: 0;
-      color: #fff;
-    }
+   
     .footer-links{
       display: flex;
       align-items: center;
       justify-content: space-around;
       background-color: #2C4251;
       position: relative;
-      bottom: -15px;
+      bottom: 0px;
       width: 100vw;
       height: 25px;
       left: 0;
