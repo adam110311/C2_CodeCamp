@@ -178,6 +178,17 @@
       text-align: center;
       justify-content: center;            
     }
+
+    .websites a{
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+
+    .websites{
+      display: flex; 
+      text-align: center;
+      justify-content: center;  
+    }
     /* 
     
     

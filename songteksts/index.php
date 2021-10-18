@@ -44,9 +44,14 @@
                 <?php echo "<h1 class='title'>".$contents['name']."</h1>";
                 echo $contents['description[songtekst]'];?>
             </div>
-        </main>
-        <?php require_once '../footer.php'; ?>
+        </main>        
     </div>
+    <div class="websites">
+      <a href="https://www.imdb.com/?ref_=nv_home"><h2>imdb</h2></a>
+      <a href="https://www.themovies.nl/"><h2>movies.nl</h2></a>
+      <a href="https://www.videoland.com/nl/"><h2>videoland</h2></a>
+    </div>
+    <?php require_once '../footer.php'; ?>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
