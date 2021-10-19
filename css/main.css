@@ -145,6 +145,18 @@
       border: 1px solid #fff;
       color: #fff;
     }
+
+    .footer-copyright{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: white;
+      position: relative;
+      bottom: 0px;
+      width: 100vw;
+      height: 25px;
+      left: 0;
+    }
    
     .footer-links{
       display: flex;
