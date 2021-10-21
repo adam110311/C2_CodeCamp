@@ -92,6 +92,10 @@
   /* ==========================================================================
      Author's custom styles
      ========================================================================== */
+
+     header{
+       height: 4vh;
+     }
      .content{
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -121,6 +125,19 @@
       margin:0 auto;
     }
 
+    .home{
+      background-color: #2C4251;     
+    }
+
+    .homelinks{
+      background-color: white;   
+      min-height: 89.5vh;   
+      max-width: 95vw;
+      margin:0 auto;      
+      border-radius: 25px;  
+      overflow: hidden;
+    }
+
     nav{
       background-color:#2C4251;
     }
@@ -137,6 +154,7 @@
       width:100%;
     }
     nav a{
+      font-size: 2.67vh;
       color: #fff;
       text-decoration: none;
       border: 1px solid #2C4251;
@@ -177,7 +195,14 @@
     .footer-links img{
       width:auto; height:25px;
     }
+
+    .Content h2{
+      text-shadow: 1px 1px white;
+    }
     
+    .Contentinfo{
+      text-shadow: white 0px 0px 3px ;
+    }
     .container_content{
       display: flex; 
       justify-content: center; 
@@ -263,6 +288,7 @@
   }
 
   footer{
+    height: 6.5vh;
     display: flex;
     justify-content:space-around;
     position: fixed;
