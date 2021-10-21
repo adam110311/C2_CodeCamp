@@ -16,7 +16,7 @@
     <!--hier word de data in een leesbaar formaat gezet-->
     <?php
     require_once 'admin/backend/conn.php';
-    $query = "SELECT * FROM `content` WHERE contenttype='tools' OR contenttype='tool'";
+    $query = "SELECT * FROM `content` WHERE contenttype='tools'";
     $stmt = $conn->prepare($query);
     $stmt->execute();
     $contents = $stmt->fetchAll(PDO::FETCH_ASSOC);
