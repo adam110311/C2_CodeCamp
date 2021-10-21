@@ -35,7 +35,7 @@
             <a href="https://www.instagram.com/"><img src="<?php echo $baseurl; ?>img/instagram.png" alt="instagram"></a> 
         </div>  
         <div class="footer-copyright">       
-            <p>&copy; 2021 CampCode</p>   
+            <p>&copy; 2021 CodeCamp</p>   
         </div>
     </div>      
 </footer>
