@@ -110,8 +110,8 @@
       text-align: center;
      }
     .content img{
-      width: 230px;
-      height: 230px;
+      width: 250px;
+      height: 250px;
       border: #000 solid;
     }
     .tijd{
@@ -145,6 +145,9 @@
     nav a:hover{
       border: 1px solid #fff;
       color: #fff;
+    }
+    .links p{
+      font-size: 25px;
     }
 
     .footer-copyright{
