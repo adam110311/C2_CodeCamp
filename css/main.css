@@ -178,6 +178,9 @@
       width:auto; height:25px;
     }
     
+    .title{
+      margin: auto;
+    }
     .container_content{
       display: flex; 
       justify-content: center; 
