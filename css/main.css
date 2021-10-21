@@ -150,14 +150,15 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
-      background-color: white;
+      background-color: #2C4251;
+      color: white;
       position: relative;
       bottom: 0px;
       width: 100vw;
       height: 25px;
       left: 0;
     }
-   
+
     .footer-links{
       display: flex;
       align-items: center;
@@ -172,27 +173,27 @@
     .footer-links a{
       color: #fff;
       text-decoration: none;
-    }    
+    }
 
     .footer-links img{
       width:auto; height:25px;
     }
-    
+
     .title{
       margin: auto;
     }
     .container_content{
-      display: flex; 
-      justify-content: center; 
-      width: 50%; 
+      display: flex;
+      justify-content: center;
+      width: 50%;
       margin: 0 auto;
     }
 
-    .Contentinfo{ 
-      display: flex; 
-      flex-direction: column; 
+    .Contentinfo{
+      display: flex;
+      flex-direction: column;
       text-align: center;
-      justify-content: center;            
+      justify-content: center;
     }
 
     .websites a{
@@ -201,9 +202,9 @@
     }
 
     .websites{
-      display: flex; 
+      display: flex;
       text-align: center;
-      justify-content: center;  
+      justify-content: center;
     }
 
     .drinks a{
@@ -212,20 +213,20 @@
     }
 
     .drinks{
-      display: flex; 
+      display: flex;
       text-align: center;
-      justify-content: center;  
+      justify-content: center;
     }
-    /* 
-    
-    
-    
-    
-    added new 
-    
-    
-    
-    
+    /*
+
+
+
+
+    added new
+
+
+
+
     */
 
     .login-form{
@@ -244,7 +245,7 @@
       justify-content: center;
     }
 
-    .form-group{      
+    .form-group{
       display: flex;
       flex-direction: column;
     }
