@@ -41,6 +41,15 @@
             <div class="Contentinfo">
                 <?php echo "<h1 class='title'>".$contents['name']."</h1>";
                 echo $contents['description[songtekst]'];?>
+                <?php
+                if($contents['actors']){
+                  echo "<ul>";
+                  foreach(explode(", ", $contents['actors']) as $actor){
+                  $query = "SELECT * FROM content WHERE id = :id";
+                  $statement = $conn->prepare($query);
+                  $statement->execute([":id" => $actor]);
+                  $contents = $statement->fetch(PDO::FETCH_ASSOC);
+                  }}?>
             </div>
             <?php if (isset($_SESSION['admin']) && $_SESSION['admin']){ ?>
               <a href="../admin/edit.php?id=<?php echo $id; ?>">Kleur aanpassen</a>

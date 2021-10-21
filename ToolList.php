@@ -32,15 +32,6 @@
                   <a href="<?php echo $base_url."/tools/index.php?id=".$content['id']; ?>"><h2 class="name"><?php echo $content['name']; ?></h2></a>
                 </div>
                 <?php } ?>
-                <?php
-                if($contents['actors']){
-                  echo "<ul>";
-                  foreach(explode(", ", $contents['actors']) as $actor){
-                  $query = "SELECT * FROM content WHERE id = :id";
-                  $statement = $conn->prepare($query);
-                  $statement->execute([":id" => $actor]);
-                  $contents = $statement->fetch(PDO::FETCH_ASSOC);
-                  }}?>
             </div>
         </main>
         <?php require_once 'footer.php'; ?>
