@@ -16,7 +16,7 @@
     <!--hier word de data in een leesbaar formaat gezet-->
     <?php
     require_once 'admin/backend/conn.php';
-    $query = "SELECT * FROM content WHERE contenttype='tools'";
+    $query = "SELECT * FROM `content` WHERE contenttype='tools' OR contenttype='tool'";
     $stmt = $conn->prepare($query);
     $stmt->execute();
     $contents = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -29,9 +29,18 @@
             <div class="Content">
                 <?php foreach ($contents as $content): ?>
                 <div class="Tools">
-                    <a href="<?php echo $base_url."/tools/index.php?id=".$content['id']; ?>"><h2 class="name"><?php echo $content['name'];?></h2></a>
+                  <a href="<?php echo $base_url."/tools/index.php?id=".$content['id']; ?>"><h2 class="name"><?php echo $content['name'];?></h2></a>
                 </div>
                 <?php endforeach; ?>
+                <?php
+                if($contents['actors']){
+                  echo "<ul>";
+                  foreach(explode(", ", $contents['actors']) as $actor){
+                  $query = "SELECT * FROM content WHERE id = :id";
+                  $statement = $conn->prepare($query);
+                  $statement->execute([":id" => $actor]);
+                  $contents = $statement->fetch(PDO::FETCH_ASSOC);
+                  }?>
             </div>
         </main>
         <?php require_once 'footer.php'; ?>
