@@ -94,11 +94,12 @@
      ========================================================================== */
      .content{
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-column-gap: 50px;
-      grid-row-gap: 50px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 5px;
       text-align: center;
+      margin-bottom: 50px;
     }
      .Content{
       display: grid;
@@ -109,8 +110,8 @@
       text-align: center;
      }
     .content img{
-      width: 250px;
-      height: 250px;
+      width: 230px;
+      height: 230px;
       border: #000 solid;
     }
     .tijd{

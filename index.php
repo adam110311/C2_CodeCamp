@@ -56,17 +56,23 @@
   <!-- img with link to the pages-->
   <div class="content">
     <div class="links">
-      <a href="SongList.php"><img src="img/songs.jpeg" alt="bing bong theurum"></a>
+      <a href="SongList.php"><img src="img/songs.jpeg" alt="bing bong theurum"></a><p>Liedjes</p>
     </div>
     <div class="links">  
-      <a href="ToolList.php"><img src="img/tools.jpeg" alt="bing bong theurum"></a>
+      <a href="ToolList.php"><img src="img/tools.jpeg" alt="bing bong theurum"></a><p>Gereedschap</p>
     </div>
     <div class="links">    
-      <a href="FilmList.php"><img src="img/films.jpeg" alt="bing bong theurum"></a>
+      <a href="FilmList.php"><img src="img/films.jpeg" alt="bing bong theurum"></a><p>Films</p>
     </div>
     <div class="links">    
-      <a href="BookList.php"><img src="img/book.jpeg" alt="bing bong theurum"></a>
+      <a href="BookList.php"><img src="img/book.jpeg" alt="bing bong theurum"></a><p>Boeken</p>
       </div>
+      <div class="links">    
+      <a href="ActorList.php"><img src="img/actors.jpg" alt="bing bong theurum"></a><p>Acteurs</p>
+    </div>
+    <div class="links">    
+      <a href="Drinks.php"><img src="img/drinks.jpeg" alt="bing bong theurum"></a><p>Dranken</p>
+    </div>
   </div>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
