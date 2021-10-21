@@ -27,11 +27,11 @@
     <div class="container_content">
         <main>
             <div class="Content">
-                <?php foreach ($contents as $content): ?>
+                <?php foreach ($contents as $content){ ?>
                 <div class="Tools">
-                  <a href="<?php echo $base_url."/tools/index.php?id=".$content['id']; ?>"><h2 class="name"><?php echo $content['name'];?></h2></a>
+                  <a href="<?php echo $base_url."/tools/index.php?id=".$content['id']; ?>"><h2 class="name"><?php echo $content['name']; ?></h2></a>
                 </div>
-                <?php endforeach; ?>
+                <?php } ?>
                 <?php
                 if($contents['actors']){
                   echo "<ul>";
@@ -40,7 +40,7 @@
                   $statement = $conn->prepare($query);
                   $statement->execute([":id" => $actor]);
                   $contents = $statement->fetch(PDO::FETCH_ASSOC);
-                  }?>
+                  }}?>
             </div>
         </main>
         <?php require_once 'footer.php'; ?>
