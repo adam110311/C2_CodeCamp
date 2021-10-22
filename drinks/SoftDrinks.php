@@ -34,13 +34,15 @@
     $drinks = $stmt->fetchAll(PDO::FETCH_ASSOC);
   ?>
     <?php require_once '../header.php'; ?>
-    <div class="container_content">        
-          <div class="Contentinfo">
-            <?php foreach ($drinks as $drink): ?>
-                <h2 class="name"><?php echo $drink['name'];?></h2>
-              <?php endforeach; ?>
-          </div>      
-        <?php require_once '../footer.php'; ?>
+    <div class="main">
+      <div class="container_content">        
+            <div class="Contentinfo">
+              <?php foreach ($drinks as $drink): ?>
+                  <h2 class="name"><?php echo $drink['name'];?></h2>
+                <?php endforeach; ?>
+            </div>      
+          <?php require_once '../footer.php'; ?>
+      </div>
     </div>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
