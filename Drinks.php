@@ -28,17 +28,6 @@
         <!--hier word de data in een leesbaar formaat gezet-->
         <div class="container_content">
             <main>
-                <div class="Content">
-                    <?php foreach ($drinks as $drink): ?>
-                    <div class="SongTexts">
-                        <?php if($drink['name'] == "koffee"){
-                            ?><a href="ActorList.php"><h2 class="name"><?php echo $drink['name'];?></h2></a><?php     
-                        } else{ 
-                            ?><h2 class="name"><?php echo $drink['name'];?></h2><?php
-                        }?>
-                    </div>
-                    <?php endforeach; ?>
-                </div>
                 <div class="drinks">
                     <a href="drinks/WarmDrinks.php"><h2>warme dranken</h2></a>
                     <a href="drinks/SoftDrinks.php"><h2>frisdranks</h2></a>
