@@ -98,11 +98,12 @@
      }
      .content{
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-column-gap: 50px;
-      grid-row-gap: 50px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 5px;
       text-align: center;
+      margin-bottom: 50px;
     }
      .Content{
       display: grid;
@@ -163,19 +164,23 @@
       border: 1px solid #fff;
       color: #fff;
     }
+    .links p{
+      font-size: 25px;
+    }
 
     .footer-copyright{
       display: flex;
       align-items: center;
       justify-content: space-around;
-      background-color: white;
+      background-color: #2C4251;
+      color: white;
       position: relative;
       bottom: 0px;
       width: 100vw;
       height: 25px;
       left: 0;
     }
-   
+
     .footer-links{
       display: flex;
       align-items: center;
@@ -186,35 +191,41 @@
       width: 100vw;
       height: 25px;
       left: 0;
+      padding-top: 20px;
     }
     .footer-links a{
       color: #fff;
       text-decoration: none;
-    }    
+    }
 
     .footer-links img{
       width:auto; height:25px;
     }
 
+<<<<<<< HEAD
     .Content h2{
       text-shadow: 1px 1px white;
     }
     
     .Contentinfo{
       text-shadow: white 0px 0px 3px ;
+=======
+    .title{
+      margin: auto;
+>>>>>>> a2bc3fbe26abcb13f3c4494efc0ca5414f39a419
     }
     .container_content{
-      display: flex; 
-      justify-content: center; 
-      width: 50%; 
+      display: flex;
+      justify-content: center;
+      width: 50%;
       margin: 0 auto;
     }
 
-    .Contentinfo{ 
-      display: flex; 
-      flex-direction: column; 
+    .Contentinfo{
+      display: flex;
+      flex-direction: column;
       text-align: center;
-      justify-content: center;            
+      justify-content: center;
     }
 
     .websites a{
@@ -223,9 +234,9 @@
     }
 
     .websites{
-      display: flex; 
+      display: flex;
       text-align: center;
-      justify-content: center;  
+      justify-content: center;
     }
 
     .drinks a{
@@ -234,20 +245,20 @@
     }
 
     .drinks{
-      display: flex; 
+      display: flex;
       text-align: center;
-      justify-content: center;  
+      justify-content: center;
     }
-    /* 
-    
-    
-    
-    
-    added new 
-    
-    
-    
-    
+    /*
+
+
+
+
+    added new
+
+
+
+
     */
 
     .login-form{
@@ -266,7 +277,7 @@
       justify-content: center;
     }
 
-    .form-group{      
+    .form-group{
       display: flex;
       flex-direction: column;
     }

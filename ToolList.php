@@ -16,7 +16,7 @@
     <!--hier word de data in een leesbaar formaat gezet-->
     <?php
     require_once 'admin/backend/conn.php';
-    $query = "SELECT * FROM content WHERE contenttype='tools'";
+    $query = "SELECT * FROM `content` WHERE contenttype='tools'";
     $stmt = $conn->prepare($query);
     $stmt->execute();
     $contents = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -27,11 +27,11 @@
     <div class="container_content">
         <main>
             <div class="Content">
-                <?php foreach ($contents as $content): ?>
+                <?php foreach ($contents as $content){ ?>
                 <div class="Tools">
-                    <a href="<?php echo $base_url."/tools/index.php?id=".$content['id']; ?>"><h2 class="name"><?php echo $content['name'];?></h2></a>
+                  <a href="<?php echo $base_url."/tools/index.php?id=".$content['id']; ?>"><h2 class="name"><?php echo $content['name']; ?></h2></a>
                 </div>
-                <?php endforeach; ?>
+                <?php } ?>
             </div>
         </main>
         <?php require_once 'footer.php'; ?>

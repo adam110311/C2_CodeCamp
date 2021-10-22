@@ -32,12 +32,12 @@
             <!-- header with link and making sure you can go back using the header-->
             <div class="nav-links">
               <?php require_once "backend/config.php"; ?>
-                <a href="<?php echo $baseurl; ?>index.php">Home</a>
-                <a href="<?php echo $baseurl; ?>SongList.php">Songs</a>
+                <a href="<?php echo $baseurl; ?>index.php">Thuis pagina</a>
+                <a href="<?php echo $baseurl; ?>SongList.php">Liedjes</a>
                 <a href="<?php echo $baseurl; ?>FilmList.php">Films</a>
-                <a href="<?php echo $baseurl; ?>ToolList.php">Tools</a>
-                <a href="<?php echo $baseurl; ?>ActorList.php">Acteurs</a>     
-                <a href="<?php echo $baseurl; ?>Drinks.php">Dranken</a>                        
+                <a href="<?php echo $baseurl; ?>ToolList.php">Gereedschap</a>
+                <a href="<?php echo $baseurl; ?>ActorList.php">Acteurs</a>
+                <a href="<?php echo $baseurl; ?>Drinks.php">Dranken</a>
                 <?php
                 if(isset($_SESSION['user_id']))
                 {
