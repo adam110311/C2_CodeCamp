@@ -26,9 +26,8 @@
 
 <!-- using header from header.php -->
 <body>
-  <div class="home">
     <?php require_once 'header.php'; ?>
-    <div class="homelinks">
+    <div class="main">
       <?php
       require_once 'admin/backend/config.php';
       ?>
@@ -88,7 +87,7 @@
       <script src="https://www.google-analytics.com/analytics.js" async></script>
     </div>
     <?php include_once 'footer.php'; ?>
-  </div>
+ 
 </body>
 
 </html>

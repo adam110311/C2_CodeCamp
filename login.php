@@ -28,30 +28,33 @@ require_once 'admin/backend/config.php';
   
 </head>
 <body>
-    <?php require_once 'header.php';
-    if(isset($_GET['msg']))
-    {
-        echo "<div class='msg'>" . $_GET['msg'] . "</div>";
-    }
-    ?>
-    <div class="login">
-        <section class="login-form">
-            <h2>inloggen</h2>
-            <form action="admin/backend/loginController.php" method="POST">
-                <div class="form-group">
-                    <label for="username">Gebruikersnaam:</label>
-                    <input type="text" name="username" placeholder="username">
-                </div>
-                <div class="form-group">
-                    <label for="username">wachtwoord:</label>
-                    <input type="password" name="password" placeholder="password">
-                </div>
-                <div class="form-group">
-                    <input type="submit" value="Login">
-                </div>
-                
-            </form>
-        </section>
+    <?php require_once 'header.php';?>
+    <div class="main">
+        <?php
+        if(isset($_GET['msg']))
+        {
+            echo "<div class='msg'>" . $_GET['msg'] . "</div>";
+        }
+        ?>
+        <div class="login">
+            <section class="login-form">
+                <h2>inloggen</h2>
+                <form action="admin/backend/loginController.php" method="POST">
+                    <div class="form-group">
+                        <label for="username">Gebruikersnaam:</label>
+                        <input type="text" name="username" placeholder="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="username">wachtwoord:</label>
+                        <input type="password" name="password" placeholder="password">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Login">
+                    </div>
+                    
+                </form>
+            </section>
+        </div>
     </div>
     <?php require_once 'footer.php'; ?>
 </body>

@@ -113,29 +113,31 @@
       grid-row-gap: 50px;
       text-align: center;
      }
+
     .content img{
       width: 250px;
       height: 250px;
       border: #000 solid;
     }
+
     .tijd{
       text-align: center;
     }
+
      .wrapper{
       max-width:960px;
       margin:0 auto;
+     }
+
+    body{
+      background-color: #2C4251;
     }
 
-    .home{
-      background-color: #2C4251;     
-    }
-
-    .homelinks{
+    .main{
       background-color: white;   
-      min-height: 89.5vh;   
+      min-height: 100vh;   
       max-width: 95vw;
       margin: auto;      
-      border-radius: 25px;  
       overflow: hidden;
     }
 
@@ -191,7 +193,7 @@
       width: 100vw;
       height: 25px;
       left: 0;
-      padding-top: 20px;
+      padding-top: 10px;
     }
     .footer-links a{
       color: #fff;
@@ -296,7 +298,6 @@
   }
 
   footer{
-    height: 6.5vh;
     display: flex;
     justify-content:space-around;
     position: fixed;
@@ -305,7 +306,6 @@
 
   .footer p{
     margin: 0px;
-    padding-bottom: 12px;
     display: flex;
     justify-content: center;
   }

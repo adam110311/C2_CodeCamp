@@ -23,23 +23,25 @@
     ?>
     <!--hier eindigt het query om de data op te roepen-->
     <?php require_once 'header.php'; ?>
-    <!--hier word de data in een leesbaar formaat gezet-->
-    <div class="container_content">
-        <main>
-            <div class="Content">
-                <?php foreach ($contents as $content): ?>
-                <div class="Film">
-                    <a href="<?php echo $base_url."/films/index.php?id=".$content['id']; ?>"><h2 class="name"><?php echo $content['name'];?></h2></a>
+    <div class="main">
+        <!--hier word de data in een leesbaar formaat gezet-->
+        <div class="container_content">
+            <main>
+                <div class="Content">
+                    <?php foreach ($contents as $content): ?>
+                    <div class="Film">
+                        <a href="<?php echo $base_url."/films/index.php?id=".$content['id']; ?>"><h2 class="name"><?php echo $content['name'];?></h2></a>
+                    </div>
+                    <?php endforeach; ?>
                 </div>
-                <?php endforeach; ?>
-            </div>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-        </main>
-        <?php require_once 'footer.php'; ?>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </main>
+            <?php require_once 'footer.php'; ?>
+        </div>
     </div>
-    <!--tot hier word de data in een leesbaar formaat gezet-->
+        <!--tot hier word de data in een leesbaar formaat gezet-->
 
 </body>
 
