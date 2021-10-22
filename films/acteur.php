@@ -36,15 +36,17 @@
     $contents = $statement->fetch(PDO::FETCH_ASSOC);
   ?>
     <?php require_once '../header.php'; ?>
-    <div class="container_content">
-        <main <?php if($contents['colorcode']) echo "style='background: " . str_replace("\'", "\\\'", str_replace('\"', "\\\"", $contents['colorcode'])) . ";'"; ?>>
-            <div class="Contentinfo">
-                <?php echo "<h1 class='title'>".$contents['name']."</h1>";
-                echo $contents['description[songtekst]'];?>
-            </div>
-        </main>
-        <?php require_once '../footer.php'; ?>
-    </div>
+    <div class="main">
+      <div class="container_content">
+          <main <?php if($contents['colorcode']) echo "style='background: " . str_replace("\'", "\\\'", str_replace('\"', "\\\"", $contents['colorcode'])) . ";'"; ?>>
+              <div class="Contentinfo">
+                  <?php echo "<h1 class='title'>".$contents['name']."</h1>";
+                  echo $contents['description[songtekst]'];?>
+              </div>
+          </main>
+          <?php require_once '../footer.php'; ?>
+      </div>
+  </div>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
