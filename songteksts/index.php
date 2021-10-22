@@ -36,25 +36,27 @@
     $contents = $statement->fetch(PDO::FETCH_ASSOC);
   ?>
 </body>
-<body <?php if($contents['colorcode']) echo "style='background: " . str_replace("\'", "\\\'", str_replace('\"', "\\\"", $contents['colorcode'])) . ";'"; ?>>
+<body>
     <?php require_once '../header.php'; ?>
-    <div class="container_content">
-        <main >
-            <div class="Contentinfo"> 
-            <?php echo "<h1 class='title'>".$contents['actors']."</h1>";
-                 echo "<h2 class='title'>".$contents['name']."</h2>";
-                echo $contents['description[songtekst]'];?>
-                
+    <div class="main"  <?php if($contents['colorcode']) echo "style='background: " . str_replace("\'", "\\\'", str_replace('\"', "\\\"", $contents['colorcode'])) . ";'"; ?>>
+      <div class="container_content">
+          <main >
+              <div class="Contentinfo"> 
+              <?php echo "<h1 class='title'>".$contents['actors']."</h1>";
+                  echo "<h2 class='title'>".$contents['name']."</h2>";
+                  echo $contents['description[songtekst]'];?>
+                  
 
-            </div>
-            <?php if (isset($_SESSION['admin']) && $_SESSION['admin']){ ?>
-              <a href="../admin/edit.php?id=<?php echo $id; ?>">Kleur aanpassen</a>
-            <?php } ?>
-        </main>
-        <?php require_once '../footer.php'; ?>
-    
+              </div>
+              <?php if (isset($_SESSION['admin']) && $_SESSION['admin']){ ?>
+                <a href="../admin/edit.php?id=<?php echo $id; ?>">Kleur aanpassen</a>
+              <?php } ?>
+          </main>
+          <?php require_once '../footer.php'; ?>
+      
+      </div>
+      <?php require_once '../footer.php'; ?>
     </div>
-    <?php require_once '../footer.php'; ?>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

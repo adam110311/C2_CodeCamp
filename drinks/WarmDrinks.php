@@ -36,9 +36,15 @@
     <?php require_once '../header.php'; ?>
     <div class="container_content">        
           <div class="Contentinfo">
-            <?php foreach ($drinks as $drink): ?>
+          <?php foreach ($drinks as $drink): ?>
+                <div class="SongTexts">
+                    <?php if($drink['name'] == "koffee"){
+                        ?><h2 class="name"><?php echo $drink['name'];?></h2></a><?php     
+                    } else{ 
+                        ?><h2 class="name"><?php echo $drink['name'];?></h2><?php
+                    }?>
+                </div>
                 
-                <h2 class="name"><?php echo $drink['name'];?></h2>
               <?php endforeach; ?>
           </div>      
         <?php require_once '../footer.php'; ?>
