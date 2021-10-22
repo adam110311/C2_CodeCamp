@@ -92,6 +92,10 @@
   /* ==========================================================================
      Author's custom styles
      ========================================================================== */
+
+     header{
+       height: 4vh;
+     }
      .content{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -110,8 +114,8 @@
       text-align: center;
      }
     .content img{
-      width: 230px;
-      height: 230px;
+      width: 250px;
+      height: 250px;
       border: #000 solid;
     }
     .tijd{
@@ -120,6 +124,19 @@
      .wrapper{
       max-width:960px;
       margin:0 auto;
+    }
+
+    .home{
+      background-color: #2C4251;     
+    }
+
+    .homelinks{
+      background-color: white;   
+      min-height: 89.5vh;   
+      max-width: 95vw;
+      margin:0 auto;      
+      border-radius: 25px;  
+      overflow: hidden;
     }
 
     nav{
@@ -138,6 +155,7 @@
       width:100%;
     }
     nav a{
+      font-size: 2.67vh;
       color: #fff;
       text-decoration: none;
       border: 1px solid #2C4251;
@@ -145,6 +163,9 @@
     nav a:hover{
       border: 1px solid #fff;
       color: #fff;
+    }
+    .links p{
+      font-size: 25px;
     }
 
     .footer-copyright{
@@ -170,6 +191,7 @@
       width: 100vw;
       height: 25px;
       left: 0;
+      padding-top: 20px;
     }
     .footer-links a{
       color: #fff;
@@ -181,8 +203,17 @@
       padding:20px;
     }
 
+<<<<<<< HEAD
+    .Content h2{
+      text-shadow: 1px 1px white;
+    }
+    
+    .Contentinfo{
+      text-shadow: white 0px 0px 3px ;
+=======
     .title{
       margin: auto;
+>>>>>>> a2bc3fbe26abcb13f3c4494efc0ca5414f39a419
     }
     .container_content{
       display: flex;
@@ -269,6 +300,7 @@
   }
 
   footer{
+    height: 6.5vh;
     display: flex;
     justify-content:space-around;
     position: fixed;
