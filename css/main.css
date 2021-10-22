@@ -134,7 +134,7 @@
       background-color: white;   
       min-height: 89.5vh;   
       max-width: 95vw;
-      margin:0 auto;      
+      margin: auto;      
       border-radius: 25px;  
       overflow: hidden;
     }
