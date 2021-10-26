@@ -96,6 +96,8 @@
      header{
        height: 4vh;
      }
+
+     /* hier wordt de css van de links in de homepage bepaald*/
      .content{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -105,6 +107,8 @@
       text-align: center;
       margin-bottom: 50px;
     }
+
+    /* zorgt ervoor dat op de tekst naast elkaar staat op alle andere pagina's */
      .Content{
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -114,12 +118,15 @@
       text-align: center;
      }
 
+     /* zorgt voor de groote van de foto's op de homepagina */
+
     .content img{
       width: 250px;
       height: 250px;
       border: #000 solid;
     }
 
+    /* zet de tijd op de homepagina in het midden */
     .tijd{
       text-align: center;
     }
@@ -129,10 +136,12 @@
       margin:0 auto;
      }
 
+    /* zorgt ervoor dat alles buiten de main een achtergrond kleur heeft (helpt met de sidebars)*/
     body{
       background-color: #2C4251;
     }
 
+    /* zorgt ervoor dat het midden van de pagina's wit is (helpt met de sidebars)*/
     .main{
       background-color: white;   
       min-height: 100vh;   
@@ -141,6 +150,7 @@
       overflow: hidden;
     }
 
+    /* bepaalt de nav kleur */
     nav{
       background-color:#2C4251;
     }
@@ -248,18 +258,8 @@
       text-align: center;
       justify-content: center;
     }
-    /*
 
-
-
-
-    added new
-
-
-
-
-    */
-
+    /* maakt style voor de login pagina */
     .login-form{
       display: flex;
       flex-direction: column;
