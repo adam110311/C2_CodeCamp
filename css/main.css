@@ -98,7 +98,7 @@
      }
 
      /* hier wordt de css van de links in de homepage bepaald*/
-     .content{
+     .Home-links{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 1fr);
@@ -106,6 +106,12 @@
       grid-row-gap: 5px;
       text-align: center;
       margin-bottom: 50px;
+    }
+      /* zorgt voor de groote van de foto's op de homepagina */
+     .Home-links img{
+      width: 250px;
+      height: 250px;
+      border: #000 solid;
     }
 
     /* zorgt ervoor dat op de tekst naast elkaar staat op alle andere pagina's */
@@ -117,14 +123,6 @@
       grid-row-gap: 50px;
       text-align: center;
      }
-
-     /* zorgt voor de groote van de foto's op de homepagina */
-
-    .content img{
-      width: 250px;
-      height: 250px;
-      border: #000 solid;
-    }
 
     /* zet de tijd op de homepagina in het midden */
     .tijd{
@@ -150,7 +148,7 @@
       overflow: hidden;
     }
 
-    /* bepaalt de nav kleur */
+    /* styling voor de nav staat hieronder */
     nav{
       background-color:#2C4251;
     }
@@ -176,10 +174,15 @@
       border: 1px solid #fff;
       color: #fff;
     }
+    /* hier eindigt de styling voor de nav */
+    
     .links p{
       font-size: 25px;
     }
 
+    /*hier begint de footer styling*/
+
+    /* hieronder wordt de styling gemaakt voor de copyright in de footer*/
     .footer-copyright{
       display: flex;
       align-items: center;
@@ -193,6 +196,7 @@
       left: 0;
     }
 
+    /* hieronder wordt de styling gemaakt voor de social media links*/
     .footer-links{
       display: flex;
       align-items: center;
@@ -213,8 +217,26 @@
     .footer-links img{
       width:auto; height:25px;
       padding:20px;
+    }  
+    
+    /* hier eindigt de styling voor de social media links*/
+
+    footer{
+      display: flex;
+      justify-content:space-around;
+      position: fixed;
+      bottom: 0;
     }
 
+    .footer p{
+      margin: 0px;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* hier eindigt de footer styling */
+
+    
     .Content h2{
       text-shadow: 1px 1px white;
     }
@@ -295,19 +317,6 @@
 
   .links img{
     border:solid black;
-  }
-
-  footer{
-    display: flex;
-    justify-content:space-around;
-    position: fixed;
-    bottom: 0;
-  }
-
-  .footer p{
-    margin: 0px;
-    display: flex;
-    justify-content: center;
   }
 
   /*

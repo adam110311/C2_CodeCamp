@@ -55,7 +55,7 @@
   <!-- Add your site or application content here -->
 
   <!-- img with link to the pages-->
-  <div class="content">
+  <div class="Home-links">
     <div class="links">
       <a href="SongList.php"><img src="img/songs.jpeg" alt="bing bong theurum"></a><p>Liedjes</p>
     </div>
