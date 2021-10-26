@@ -105,8 +105,12 @@
       grid-column-gap: 0px;
       grid-row-gap: 5px;
       text-align: center;
-      margin-bottom: 50px;
     }
+
+    .Home-links p{
+      font-size: 20px;
+    }
+
       /* zorgt voor de groote van de foto's op de homepagina */
      .Home-links img{
       width: 250px;
@@ -131,8 +135,9 @@
 
     /* zorgt ervoor dat het midden van de pagina's wit is (helpt met de sidebars)*/
     .main{
+      padding-top:5px;
       background-color: white;   
-      min-height: 100vh;   
+      min-height: 95vh;   
       max-width: 95vw;
       margin: auto;      
       overflow: hidden;
@@ -169,10 +174,7 @@
     /* hier eindigt de styling voor de nav */
     /*=======================================================================================================*/
     
-    .links p{
-      font-size: 25px;
-    }
-
+    
     /*=======================================================================================================*/
     /*hier begint de footer styling*/
     /*=======================================================================================================*/
