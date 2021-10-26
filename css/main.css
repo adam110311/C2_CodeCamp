@@ -233,7 +233,7 @@
     /*=======================================================================================================*/
 
     /*=======================================================================================================*/
-    /* hier begint de styling voor de main paginas*/
+    /* hier begint de styling voor de main pagina's*/
     /*=======================================================================================================*/
 
     /* zorgt ervoor dat op de tekst naast elkaar staat op alle andere pagina's */
@@ -278,17 +278,9 @@
       text-align: center;
       justify-content: center;
     }
-
-    .drinks a{
-      margin-right: 30px;
-      margin-left: 30px;
-    }
-
-    .drinks{
-      display: flex;
-      text-align: center;
-      justify-content: center;
-    }
+    /*=======================================================================================================*/
+    /* hier eindigt de styling voor de main pagina's */
+    /*=======================================================================================================*/
 
     /* maakt style voor de login pagina */
     .login-form{

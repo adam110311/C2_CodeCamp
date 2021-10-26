@@ -28,7 +28,7 @@
         <!--hier word de data in een leesbaar formaat gezet-->
         <div class="container_content">
             <main>
-                <div class="drinks">
+                <div class="Contentinfo">
                     <a href="drinks/WarmDrinks.php"><h2>warme dranken</h2></a>
                     <a href="drinks/SoftDrinks.php"><h2>frisdranks</h2></a>
                 </div>
