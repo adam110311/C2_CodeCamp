@@ -114,16 +114,6 @@
       border: #000 solid;
     }
 
-    /* zorgt ervoor dat op de tekst naast elkaar staat op alle andere pagina's */
-     .Content{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-column-gap: 50px;
-      grid-row-gap: 50px;
-      text-align: center;
-     }
-
     /* zet de tijd op de homepagina in het midden */
     .tijd{
       text-align: center;
@@ -147,8 +137,9 @@
       margin: auto;      
       overflow: hidden;
     }
-
+    /*=======================================================================================================*/
     /* styling voor de nav staat hieronder */
+    /*=======================================================================================================*/
     nav{
       background-color:#2C4251;
     }
@@ -174,14 +165,17 @@
       border: 1px solid #fff;
       color: #fff;
     }
+    /*=======================================================================================================*/
     /* hier eindigt de styling voor de nav */
+    /*=======================================================================================================*/
     
     .links p{
       font-size: 25px;
     }
 
+    /*=======================================================================================================*/
     /*hier begint de footer styling*/
-
+    /*=======================================================================================================*/
     /* hieronder wordt de styling gemaakt voor de copyright in de footer*/
     .footer-copyright{
       display: flex;
@@ -195,8 +189,9 @@
       height: 25px;
       left: 0;
     }
-
+    /*=======================================================================================================*/
     /* hieronder wordt de styling gemaakt voor de social media links*/
+    /*=======================================================================================================*/
     .footer-links{
       display: flex;
       align-items: center;
@@ -218,9 +213,9 @@
       width:auto; height:25px;
       padding:20px;
     }  
-    
+    /*=======================================================================================================*/
     /* hier eindigt de styling voor de social media links*/
-
+    /*=======================================================================================================*/
     footer{
       display: flex;
       justify-content:space-around;
@@ -233,10 +228,24 @@
       display: flex;
       justify-content: center;
     }
-
+    /*=======================================================================================================*/
     /* hier eindigt de footer styling */
+    /*=======================================================================================================*/
 
-    
+    /*=======================================================================================================*/
+    /* hier begint de styling voor de main paginas*/
+    /*=======================================================================================================*/
+
+    /* zorgt ervoor dat op de tekst naast elkaar staat op alle andere pagina's */
+    .Content{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-column-gap: 50px;
+      grid-row-gap: 50px;
+      text-align: center;
+     }
+
     .Content h2{
       text-shadow: 1px 1px white;
     }
