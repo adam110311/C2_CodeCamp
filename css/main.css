@@ -240,12 +240,18 @@
 
     /* zorgt ervoor dat op de tekst naast elkaar staat op alle andere pagina's */
     .Content{
+      margin-top: 25px;
+      padding: 5px 25px 5px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-column-gap: 50px;
       grid-row-gap: 50px;
       text-align: center;
+      border-radius: 25px;  
+      box-shadow: 5px 5px 10px 3px black;
+      overflow: hidden;
+      border-color:black;
      }
 
     .Content h2{
