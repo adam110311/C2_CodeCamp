@@ -36,7 +36,7 @@
     <?php require_once '../header.php'; ?>
     <div class="main">
       <div class="container_content">        
-            <div class="Contentinfo">
+            <div class="Content">
               <?php foreach ($drinks as $drink): ?>
                   <h2 class="name"><?php echo $drink['name'];?></h2>
                 <?php endforeach; ?>

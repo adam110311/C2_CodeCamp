@@ -37,16 +37,15 @@
     <div class="main">
       <div class="container_content">        
             <div class="Contentinfo">
-            <?php foreach ($drinks as $drink): ?>
-                  <div class="SongTexts">
-                      <?php if($drink['name'] == "koffee"){
-                          ?><h2 class="name"><?php echo $drink['name'];?></h2></a><?php     
-                      } else{ 
-                          ?><h2 class="name"><?php echo $drink['name'];?></h2><?php
-                      }?>
-                  </div>
-                  
+              <div class="Content">
+                <?php foreach ($drinks as $drink): ?>                    
+                  <?php if($drink['name'] == "koffee"){
+                      ?><h2 class="name"><?php echo $drink['name'];?></h2></a><?php     
+                  } else{ 
+                      ?><h2 class="name"><?php echo $drink['name'];?></h2><?php
+                  }?>                 
                 <?php endforeach; ?>
+              </div>
             </div>      
           <?php require_once '../footer.php'; ?>
       </div>

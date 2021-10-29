@@ -29,9 +29,9 @@
             <main>
                 <div class="Content">
                     <?php foreach ($contents as $content): ?>
-                    <div class="Books">
-                        <a href="<?php echo $base_url."/boeken/index.php?id=".$content['id']; ?>"><h2 class="name"><?php echo $content['name'];?></h2></a>
-                    </div>
+                        <div class="Books">
+                            <a href="<?php echo $base_url."/boeken/index.php?id=".$content['id']; ?>"><h2 class="name"><?php echo $content['name'];?></h2></a>
+                        </div>
                     <?php endforeach; ?>
                 </div>
             </main>

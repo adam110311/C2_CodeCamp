@@ -42,11 +42,11 @@
       <div class="container_content">
           <main >
               <div class="Contentinfo"> 
-              <?php echo "<h1 class='title'>".$contents['actors']."</h1>";
+                <?php 
+                  echo "<h1 class='title'>".$contents['actors']."</h1>";
                   echo "<h2 class='title'>".$contents['name']."</h2>";
-                  echo $contents['description[songtekst]'];?>
-                  
-
+                  echo $contents['description[songtekst]'];
+                ?>
               </div>
               <?php if (isset($_SESSION['admin']) && $_SESSION['admin']){ ?>
                 <a href="../admin/edit.php?id=<?php echo $id; ?>">Kleur aanpassen</a>
