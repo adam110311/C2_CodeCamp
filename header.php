@@ -39,6 +39,7 @@
                 <a href="<?php echo $baseurl; ?>ToolList.php">Gereedschap</a>
                 <a href="<?php echo $baseurl; ?>ActorList.php">Acteurs</a>
                 <a href="<?php echo $baseurl; ?>Drinks.php">Dranken</a>
+                <a href="<?php echo $baseurl; ?>aboutus.php">Over ons</a>
                 <?php
                 if(isset($_SESSION['user_id']))
                 {
