@@ -204,6 +204,7 @@
       width: 100vw;
       height: 25px;
       left: 0;
+      padding-top:5px;
     }
     .footer-links a{
       color: #fff;
