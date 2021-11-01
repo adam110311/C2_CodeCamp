@@ -25,7 +25,7 @@ require_once 'admin/backend/config.php';
 
   <meta name="theme-color" content="#fafafa">
 
-  
+
 </head>
 <body>
     <?php require_once 'header.php';?>
@@ -51,7 +51,14 @@ require_once 'admin/backend/config.php';
                     <div class="form-group">
                         <input type="submit" value="Login">
                     </div>
-                    
+                    <?php
+                if(!isset($_SESSION['user_id']))
+                {
+                  ?>
+                  <a href="signup.php">registeer</a>
+                  <?php
+                }
+                ?>
                 </form>
             </section>
         </div>

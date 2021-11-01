@@ -53,7 +53,6 @@
                 {
                   ?>
                   <a href="<?php echo $baseurl; ?>login.php">login</a>
-                  <a href="signup.php">registeer</a>
                   <?php
                 }
                 ?>
