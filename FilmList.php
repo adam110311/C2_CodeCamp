@@ -33,10 +33,11 @@
                             <a href="<?php echo $base_url."/films/index.php?id=".$content['id']; ?>"><h2 class="name"><?php echo $content['name'];?></h2></a>
                         </div>
                     <?php endforeach; ?>
+                    <div class="name">
+                      <h2><a href="<?php echo $baseurl; ?>ActorList.php">Acteurs</a></h2>
+                    </div>
                 </div>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
+
             </main>
             <?php require_once 'footer.php'; ?>
         </div>

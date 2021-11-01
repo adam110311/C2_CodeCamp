@@ -55,7 +55,7 @@ require_once 'admin/backend/config.php';
                 if(!isset($_SESSION['user_id']))
                 {
                   ?>
-                  <a href="signup.php">registeer</a>
+                  <button href="signup.php">registeer</button>
                   <?php
                 }
                 ?>
