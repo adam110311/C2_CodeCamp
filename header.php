@@ -37,7 +37,7 @@
                 <a href="<?php echo $baseurl; ?>SongList.php">Liedjes</a>
                 <a href="<?php echo $baseurl; ?>FilmList.php">Films</a>
                 <a href="<?php echo $baseurl; ?>ToolList.php">Gereedschap</a>
-                <a href="<?php echo $baseurl; ?>ActorList.php">Acteurs</a>
+                <a href="<?php echo $baseurl; ?>BookList.php">Boeken</a>
                 <a href="<?php echo $baseurl; ?>Drinks.php">Dranken</a>
                 <a href="<?php echo $baseurl; ?>aboutus.php">Over ons</a>
                 <?php
