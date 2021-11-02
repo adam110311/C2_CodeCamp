@@ -298,10 +298,6 @@
       justify-content: center;
     }
 
-    .form-group{
-      margin: 1rem 0;
-    }
-
     .login{
       display: flex;
       justify-content: center;
@@ -310,11 +306,16 @@
     .form-group{
       display: flex;
       flex-direction: column;
+      margin: 1rem 0;
     }
 
     a{
       color: black;
       text-decoration: none;
+    }
+
+    .login-to-register button{
+      width: 150px;
     }
 
     /*=======================================================================================================*/

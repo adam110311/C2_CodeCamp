@@ -51,14 +51,11 @@ require_once 'admin/backend/config.php';
                     <div class="form-group">
                         <input type="submit" value="Login">
                     </div>
-                    <?php
-                if(!isset($_SESSION['user_id']))
-                {
-                  ?>
-                  <button href="signup.php">registeer</button>
-                  <?php
-                }
-                ?>
+                </form>
+                <form action="signup.php">
+                    <div class="login-to-register">
+                        <button type="submit">registeer</button>
+                    </div>
                 </form>
             </section>
         </div>
