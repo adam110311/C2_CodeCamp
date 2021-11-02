@@ -26,6 +26,7 @@
 <body>
     <?php require_once 'header.php'; ?>
     <div class="main">
+        <p class="kruimelpad">home/login</p>
         <div class="login">
             <section class="signup-form">
                 <h2>registreren</h2>
