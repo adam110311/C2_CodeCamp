@@ -30,6 +30,7 @@ require_once 'admin/backend/config.php';
 <body>
     <?php require_once 'header.php';?>
     <div class="main">
+        <p class="kruimelpad">home/</p>
         <?php
         if(isset($_GET['msg']))
         {

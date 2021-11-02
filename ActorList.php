@@ -24,6 +24,7 @@
     <!--hier eindigt het query om de data op te roepen-->
     <?php require_once 'header.php'; ?>
     <div class="main">
+        <p class="kruimelpad">home/films</p>
         <!--hier word de data in een leesbaar formaat gezet-->
         <div class="container_content">
             <main>

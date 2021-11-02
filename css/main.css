@@ -347,6 +347,11 @@
       border:solid black;
     }
 
+    /* zorgt ervoor dat de kruimelpad (home/etc) geen margin opneemt */
+    .kruimelpad{
+      margin: 0px;
+    }
+
 
 
   .hidden,

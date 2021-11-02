@@ -15,6 +15,7 @@
 <body>
     <?php require_once 'header.php'; ?>
     <div class="main">
+        <p class="kruimelpad">home/</p>
         <div class="overons">
             <h1>over ons</h1>
             <div class="map">

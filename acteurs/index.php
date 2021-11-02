@@ -36,7 +36,8 @@
     $contents = $statement->fetch(PDO::FETCH_ASSOC);
   ?>
     <?php require_once '../header.php'; ?>
-    <div class="main">
+    <div class="main">      
+      <p class="kruimelpad">home/films/acteurs</p>
       <div class="container_content">
           <main >
               <div class="Contentinfo"> 

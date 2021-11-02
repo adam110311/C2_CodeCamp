@@ -37,6 +37,7 @@
   ?>
     <?php require_once '../header.php'; ?>
     <div class="main">
+      <p class="kruimelpad">home/tools</p>
       <div class="container_content">
           <main <?php if($contents['colorcode']) echo "style='background: " . str_replace("\'", "\\\'", str_replace('\"', "\\\"", $contents['colorcode'])) . ";'"; ?>>
               <div class="Contentinfo">

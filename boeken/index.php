@@ -36,21 +36,24 @@
     $books = $statement->fetch(PDO::FETCH_ASSOC);
   ?>
     <?php require_once '../header.php'; ?>
-    <div class="container_content">
+    <div class="main">
+      <p class="kruimelpad">home/boeken</p>
+      <div class="container_content">
 
-       <main>
-            <div class="Contentinfo">
-                <?php echo "<h1 class='title'>".$books['name']."</h1>";
-                echo "<h3>".$books['description']."</h3>";
-                echo "<h4>".$books['page_count']."</h4>";
-                echo $books['author'];?> 
-            </div>
+        <main>
+              <div class="Contentinfo">
+                  <?php echo "<h1 class='title'>".$books['name']."</h1>";
+                  echo "<h3>".$books['description']."</h3>";
+                  echo "<h4>".$books['page_count']."</h4>";
+                  echo $books['author'];?> 
+              </div>
 
-            <?php if (isset($_SESSION['admin']) && $_SESSION['admin']){ ?>
-              <a href="../admin/edit.php?id=<?php echo $ID; ?>">Kleur aanpassen</a>
-            <?php } ?>
-        </main>
-        <?php require_once '../footer.php'; ?>
+              <?php if (isset($_SESSION['admin']) && $_SESSION['admin']){ ?>
+                <a href="../admin/edit.php?id=<?php echo $ID; ?>">Kleur aanpassen</a>
+              <?php } ?>
+          </main>
+          <?php require_once '../footer.php'; ?>
+      </div>
     </div>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
