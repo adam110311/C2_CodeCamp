@@ -16,10 +16,10 @@
     <!--hier begint het query om de data op te roepen-->
     <?php
     require_once 'admin/backend/conn.php';
-    $query = "SELECT * FROM books WHERE contenttype='books'";
+    $query = "SELECT * FROM books";
     $stmt = $conn->prepare($query);
     $stmt->execute();
-    $contents = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $books = $stmt->fetchAll(PDO::FETCH_ASSOC);
     ?>
     <!--hier eindigt het query om de data op te roepen-->
     <?php require_once 'header.php'; ?>
@@ -27,14 +27,14 @@
              <!--hier word de data in een leesbaar formaat gezet-->
         <div class="container_content">
             <main>
-                <div class="Content">  
+                <div class="Content">
                 <?php foreach ($books as $book){ ?>
                         <div class="Books">
-                            <a href="<?php echo $base_url."./boeken/index.php?id=".$content['id']; ?>"><h2 class="name"><?php echo $content['title']; ?></h2></a>
+                            <a href="<?php echo $base_url."./boeken/index.php?id=".$book['id']; ?>"><h2 class="name"><?php echo $book['name']; ?></h2></a>
                         </div>
                     <?php } ?>
-                    
                 </div>
+                <p>Een boek in traditionele zin is een samengevoegde hoeveelheid papier met tekst, afbeeldingen of allebei. Daarnaast wordt met de term de betreffende informatie, of een soortgelijke verzameling informatie, aangeduid ('een boek schrijven', 'een boek downloaden').<br><br> Het woord 'boek' is vermoedelijk afkomstig van het Germaanse woord voor beuk, boche. De omslagen van de eerste boeken werden namelijk gemaakt van een rechthoekig stuk (beuken)hout. Het Griekse woord biblia (boeken) is het meervoud van biblion dat oorspronkelijk 'papyrusje' betekende, het materiaal waarop in de oudheid meestal werd geschreven, en later werd gebruikt als aanduiding van papier, geschrift en boek(rol). </p>
             </main>
             <?php require_once 'footer.php'; ?>
         </div>
