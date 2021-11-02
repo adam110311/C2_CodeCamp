@@ -32,8 +32,8 @@
             <!-- header with link and making sure you can go back using the header-->
             <div class="nav-links">
               <?php require_once "backend/config.php"; ?>
-              <img src="<?php echo $baseurl; ?>/img/codecamp.png" style="height: 3vh;" alt="">
-                <a href="<?php echo $baseurl; ?>index.php">Thuis pagina</a>
+
+                <a href="<?php echo $baseurl; ?>index.php"><img src="<?php echo $baseurl; ?>/img/codecamp.png" style="height: 3vh;" alt=""></a>
                 <a href="<?php echo $baseurl; ?>SongList.php">Liedjes</a>
                 <a href="<?php echo $baseurl; ?>FilmList.php">Films</a>
                 <a href="<?php echo $baseurl; ?>ToolList.php">Gereedschap</a>
