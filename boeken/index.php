@@ -38,16 +38,16 @@
     <?php require_once '../header.php'; ?>
     <div class="container_content">
 
-        <main <?php if($books['colorcode']) echo "style='background: " . str_replace("\'", "\\\'", str_replace('\"', "\\\"", $books['colorcode'])) . ";'"; ?>>
+       <main>
             <div class="Contentinfo">
-                <?php echo "<h1 class='title'>".$books['title']."</h1>";
+                <?php echo "<h1 class='title'>".$books['name']."</h1>";
                 echo "<h3>".$books['description']."</h3>";
-                echo $books['authors'];
-                echo $books['page_count'];?>
+                echo "<h4>".$books['page_count']."</h4>";
+                echo $books['author'];?> 
             </div>
 
             <?php if (isset($_SESSION['admin']) && $_SESSION['admin']){ ?>
-              <a href="../admin/edit.php?id=<?php echo $id; ?>">Kleur aanpassen</a>
+              <a href="../admin/edit.php?id=<?php echo $ID; ?>">Kleur aanpassen</a>
             <?php } ?>
         </main>
         <?php require_once '../footer.php'; ?>
