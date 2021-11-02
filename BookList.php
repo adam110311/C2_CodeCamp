@@ -16,10 +16,10 @@
     <!--hier begint het query om de data op te roepen-->
     <?php
     require_once 'admin/backend/conn.php';
-    $query = "SELECT * FROM books WHERE contenttype='books'";
+    $query = "SELECT * FROM books";
     $stmt = $conn->prepare($query);
     $stmt->execute();
-    $contents = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $books = $stmt->fetchAll(PDO::FETCH_ASSOC);
     ?>
     <!--hier eindigt het query om de data op te roepen-->
     <?php require_once 'header.php'; ?>
@@ -30,7 +30,7 @@
                 <div class="Content">  
                 <?php foreach ($books as $book){ ?>
                         <div class="Books">
-                            <a href="<?php echo $base_url."./boeken/index.php?id=".$content['id']; ?>"><h2 class="name"><?php echo $content['title']; ?></h2></a>
+                            <a href="<?php echo $base_url."./boeken/index.php?id=".$book['id']; ?>"><h2 class="name"><?php echo $book['name']; ?></h2></a>
                         </div>
                     <?php } ?>
                     

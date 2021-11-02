@@ -33,17 +33,17 @@
     $query = "SELECT * FROM books WHERE id = :id";
     $statement = $conn->prepare($query);
     $statement->execute([":id" => $id]);
-    $contents = $statement->fetch(PDO::FETCH_ASSOC);
+    $books = $statement->fetch(PDO::FETCH_ASSOC);
   ?>
     <?php require_once '../header.php'; ?>
     <div class="container_content">
 
-        <main <?php if($contents['colorcode']) echo "style='background: " . str_replace("\'", "\\\'", str_replace('\"', "\\\"", $contents['colorcode'])) . ";'"; ?>>
+        <main <?php if($books['colorcode']) echo "style='background: " . str_replace("\'", "\\\'", str_replace('\"', "\\\"", $books['colorcode'])) . ";'"; ?>>
             <div class="Contentinfo">
-                <?php echo "<h1 class='title'>".$contents['title']."</h1>";
-                echo "<h3>".$contents['description']."</h3>";
-                echo $contents['authors'];
-                echo $contents['pagecount'];?>
+                <?php echo "<h1 class='title'>".$books['title']."</h1>";
+                echo "<h3>".$books['description']."</h3>";
+                echo $books['authors'];
+                echo $books['page_count'];?>
             </div>
 
             <?php if (isset($_SESSION['admin']) && $_SESSION['admin']){ ?>
