@@ -43,6 +43,11 @@
                         </div>
                     <?php endforeach; ?>                        
                 </div>
+                <div class="review-sites">
+                    <a href="https://www.imdb.com/"><h2>Imdb</h2></a>
+                    <a href="https://www.videoland.com/nl/"><h2>Videoland</h2></a>
+                    <a href="https://www.fandango.com/"><h2>Fandango</h2></a>
+                </div>
 
             </main>
             <?php require_once 'footer.php'; ?>
