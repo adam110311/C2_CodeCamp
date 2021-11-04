@@ -36,7 +36,7 @@
     <?php require_once '../header.php'; ?>
     <div class="main">
       
-      <p class="kruimelpad">home/dinks</p>
+      <p class="kruimelpad">home/drinks</p>
       <div class="container_content">        
             <div class="Contentinfo">
               <div class="Content">
