@@ -29,17 +29,19 @@
         <div class="container_content">
             <main>
                 <div class="Content">
+                    <div class="name">
+                        <h2><a href="<?php echo $baseurl; ?>ActorList.php">Acteurs</a></h2>
+                    </div>
+                    <div class="name">
+                        <h2><a href="<?php echo $baseurl; ?>CharacterList.php">Characters</a></h2>
+                    </div>
+                </div>
+                <div class="Content">
                     <?php foreach ($contents as $content): ?>
                         <div class="Film">
                             <a href="<?php echo $base_url."/films/index.php?id=".$content['id']; ?>"><h2 class="name"><?php echo $content['name'];?></h2></a>
                         </div>
-                    <?php endforeach; ?>
-                    <div class="name">
-                      <h2><a href="<?php echo $baseurl; ?>ActorList.php">Acteurs</a></h2>
-                    </div>
-                    <div class="name">
-                      <h2><a href="<?php echo $baseurl; ?>CharacterList.php">Characters</a></h2>
-                    </div>
+                    <?php endforeach; ?>                        
                 </div>
 
             </main>

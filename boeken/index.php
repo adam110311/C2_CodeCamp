@@ -43,6 +43,7 @@
         <main>
               <div class="Contentinfo">
                   <?php echo "<h1 class='title'>".$books['name']."</h1>";
+                  echo '<img src="../img/'.$_GET['id'].'-book.jpg" />';
                   echo "<h3>".$books['description']."</h3>";
                   echo "<h4>".$books['page_count']."</h4>";
                   echo $books['author'];?> 
