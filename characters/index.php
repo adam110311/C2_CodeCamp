@@ -45,6 +45,7 @@
               <div class="Contentinfo"> 
                 <?php 
                   echo "<h1 class='title'>".$contents['actors']."</h1>";
+                  echo '<img src="../img/'.$_GET['id'].'-content.jpg" />';
                   echo "<h2 class='title'>".$contents['name']."</h2>";
                   echo $contents['description[songtekst]'];
                 ?>

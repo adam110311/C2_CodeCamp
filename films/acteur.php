@@ -41,6 +41,7 @@
           <main <?php if($contents['colorcode']) echo "style='background: " . str_replace("\'", "\\\'", str_replace('\"', "\\\"", $contents['colorcode'])) . ";'"; ?>>
               <div class="Contentinfo">
                   <?php echo "<h1 class='title'>".$contents['name']."</h1>";
+                  echo '<img src="../img/'.$_GET['id'].'-content.jpg" />';
                   echo $contents['description[songtekst]'];?>
               </div>
           </main>

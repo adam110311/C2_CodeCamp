@@ -42,6 +42,7 @@
           <main >
               <div class="Contentinfo"> 
                   <?php echo "<h1 class='title'>".$contents['name']."</h1>";
+                  echo '<img src="../img/'.$_GET['id'].'-content.jpg" />';
                   echo $contents['description[songtekst]'];?>
               </div>
               <?php if (isset($_SESSION['admin']) && $_SESSION['admin']){ ?>

@@ -42,7 +42,8 @@
           <main <?php if($contents['colorcode']) echo "style='background: " . str_replace("\'", "\\\'", str_replace('\"', "\\\"", $contents['colorcode'])) . ";'"; ?>>
               <div class="Contentinfo">
                   <?php echo "<h1 class='title'>".$contents['name']."</h1>";
-                  echo $contents['description[songtekst]'];//ik vind het nog steeds stom dat het zo heet
+                  echo '<img src="../img/'.$_GET['id'].'-content.jpg" />';
+                  echo $contents['description[songtekst]'];//ik vind het nog steeds stom dat het zo heet   bek dicht XD
                   if($contents['actors']){
                     echo "<ul>";
                     foreach(explode(", ", $contents['actors']) as $actor){?>
