@@ -2,7 +2,7 @@
 <html lang="nl">
 
 <head>
-    <title>Song Lijst</title>
+    <title>Character lijst</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,7 +16,7 @@
     <!--hier begint het query om de data op te roepen-->
     <?php
     require_once 'admin/backend/conn.php';
-    $query = "SELECT * FROM content WHERE contenttype='movie'";
+    $query = "SELECT * FROM content WHERE contenttype='character'";
     $stmt = $conn->prepare($query);
     $stmt->execute();
     $contents = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -24,29 +24,22 @@
     <!--hier eindigt het query om de data op te roepen-->
     <?php require_once 'header.php'; ?>
     <div class="main">
-        <p class="kruimelpad">home/</p>
+        <p class="kruimelpad">home/films</p>
         <!--hier word de data in een leesbaar formaat gezet-->
         <div class="container_content">
             <main>
                 <div class="Content">
                     <?php foreach ($contents as $content): ?>
                         <div class="Film">
-                            <a href="<?php echo $base_url."/films/index.php?id=".$content['id']; ?>"><h2 class="name"><?php echo $content['name'];?></h2></a>
+                            <a href="<?php echo $base_url."/characters/index.php?id=".$content['id']; ?>"><h2 class="name"><?php echo $content['name'];?></h2></a>
                         </div>
                     <?php endforeach; ?>
-                    <div class="name">
-                      <h2><a href="<?php echo $baseurl; ?>ActorList.php">Acteurs</a></h2>
-                    </div>
-                    <div class="name">
-                      <h2><a href="<?php echo $baseurl; ?>CharacterList.php">Characters</a></h2>
-                    </div>
                 </div>
-
             </main>
             <?php require_once 'footer.php'; ?>
         </div>
     </div>
-        <!--tot hier word de data in een leesbaar formaat gezet-->
+    <!--tot hier word de data in een leesbaar formaat gezet-->
 
 </body>
 
