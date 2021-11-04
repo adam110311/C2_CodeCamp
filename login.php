@@ -51,11 +51,7 @@ require_once 'admin/backend/config.php';
                     </div>
                     <div class="form-group">
                         <input type="submit" value="Login">
-                    </div>
-                </form>
-                <form action="signup.php">
-                    <div class="login-to-register">
-                        <button type="submit">registeer</button>
+                        <a><button onclick="window.location.href = 'signup.php';return false" style="margin-top: 5px;width: 100%;">Registeer</button></a>
                     </div>
                 </form>
             </section>
