@@ -25,7 +25,6 @@
 
 
 </head>
-
 <footer>
     <div class="footer">
         <div class="footer-links">
