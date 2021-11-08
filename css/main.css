@@ -165,14 +165,14 @@
       font-size: 2.67vh;
       color: #fff;
       text-decoration: none;
-      border: 1px solid #2C4251;   
+      border: 1px solid #2C4251;
     }
 
     nav a:hover{
       border: 1px solid #fff;
       color: #fff;
     }
-    
+
     /*=======================================================================================================*/
     /* hier eindigt de styling voor de nav */
     /*=======================================================================================================*/
@@ -281,6 +281,13 @@
 
     .Contentinfo{
       text-shadow: white 0px 0px 3px ;
+    }
+    .Contentinfo img{
+      width: 300px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
     }
     .container_content{
       display: flex;
