@@ -275,6 +275,16 @@
       border-color:black;
     }
 
+    .book-text{
+      margin-top: 25px;
+      padding: 5px 25px 5px;
+      text-align: center;
+      border-radius: 25px;
+      box-shadow: 5px 5px 10px 3px black;
+      overflow: hidden;
+      border-color:black;
+     }
+
     .Content h2{
       text-shadow: 1px 1px white;
     }
