@@ -11,5 +11,10 @@ $dbName = 'c2_codecamp';
 $dbUser = 'root';
 $dbPass = '';
 
-//De url waarop jouw project staat. Géén slash aan het einde.
-$base_url = "http://localhost/c2_codecamp";
+//De url waarop jouw project staat. Géén slash aan het einde. MILAN WHYYYY
+if(is_dir($_SERVER['DOCUMENT_ROOT'] . '/c2_codecamp')){
+  $base_url = "http://localhost/c2_codecamp";
+}
+else{
+  $base_url = "https://c2_codecamp.test";
+}
