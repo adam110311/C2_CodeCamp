@@ -12,4 +12,4 @@ $dbUser = 'root';
 $dbPass = '';
 
 //De url waarop jouw project staat. Géén slash aan het einde.
-$base_url = "https://c2_codecamp.test";
+$base_url = "http://localhost/C2_CodeCamp";

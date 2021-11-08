@@ -1,2 +1,2 @@
 <?php
-$baseurl = "https://c2_codecamp.test/";//Eindig dit met een /
+$baseurl = "http://localhost/C2_CodeCamp/";//Eindig dit met een /
