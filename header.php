@@ -32,7 +32,7 @@
             <!-- header with link and making sure you can go back using the header-->
             <div class="nav-links">
               <?php
-              if(is_dir('c2_codecamp')){
+              if(is_dir($_SERVER['DOCUMENT_ROOT'] . 'c2_codecamp')){
                 require_once $_SERVER['DOCUMENT_ROOT'] . "c2_codecamp/backend/config.php";
               }
               else{
