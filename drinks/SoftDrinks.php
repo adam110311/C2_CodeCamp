@@ -39,7 +39,11 @@
       <div class="container_content">        
             <div class="Content">
               <?php foreach ($drinks as $drink): ?>
-                  <h2 class="name"><?php echo $drink['name'];?></h2>
+                  <?php if($drink['name'] == "cola"){
+                      ?><h2> <a href="../acteurs/index.php?id=24"><?php echo $drink['name'];?></a></h2><?php     
+                  } else{ 
+                      ?><h2 class="name"><?php echo $drink['name'];?></h2><?php
+                  }?>
                 <?php endforeach; ?>
             </div>      
           <?php require_once '../footer.php'; ?>
