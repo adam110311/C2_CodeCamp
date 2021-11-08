@@ -31,7 +31,7 @@
         <div class="wrapper">
             <!-- header with link and making sure you can go back using the header-->
             <div class="nav-links">
-              <?php require_once "backend/config.php"; ?>
+              <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/backend/config.php"; ?>
 
                 <a href="<?php echo $baseurl; ?>index.php"><img src="<?php echo $baseurl; ?>/img/codecamp.png" style="height: 3vh;" alt="codecamp logo"></a>
                 <a href="<?php echo $baseurl; ?>SongList.php">Liedjes</a>
