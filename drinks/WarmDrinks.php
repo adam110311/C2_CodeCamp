@@ -33,6 +33,13 @@
     $stmt->execute();
     $drinks = $stmt->fetchAll(PDO::FETCH_ASSOC);
   ?>
+  <?php
+    require_once '../admin/backend/conn.php';
+    $query = "SELECT * FROM content";
+    $stmt = $conn->prepare($query);
+    $stmt->execute();
+    $actors = $stmt->fetchAll(PDO::FETCH_ASSOC);
+  ?>
     <?php require_once '../header.php'; ?>
     <div class="main">
       
@@ -42,7 +49,7 @@
               <div class="Content">
                 <?php foreach ($drinks as $drink): ?>                    
                   <?php if($drink['name'] == "koffee"){
-                      ?><h2 class="name"><?php echo $drink['name'];?></h2></a><?php     
+                      ?><h2> <a href="../acteurs/index.php?id=23"><?php echo $drink['name'];?></a></h2><?php     
                   } else{ 
                       ?><h2 class="name"><?php echo $drink['name'];?></h2><?php
                   }?>                 
