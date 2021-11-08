@@ -4,3 +4,6 @@
 node_modules
 dist
 .cache
+
+admin/backend/config.php
+backend/config.php
