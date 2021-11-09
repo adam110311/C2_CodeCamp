@@ -41,18 +41,30 @@
       <div class="container_content">
 
         <main>
-              <div class="Contentinfo">
-                  <?php echo "<h1 class='title'>".$books['name']."</h1>";
-                  echo '<img src="../img/'.$_GET['id'].'-book.jpg" />';
-                  echo "<h3>".$books['description']."</h3>";
-                  echo "<h4>".$books['page_count']."</h4>";
-                  echo $books['author'];?> 
-              </div>
+          <div class="Contentinfo">
+              <?php echo "<h1 class='title'>".$books['name']."</h1>";
+              echo '<img src="../img/'.$_GET['id'].'-book.jpg" />';
+              if(isset($books['description']))
+              {
+                echo "<h3>".$books['description']."</h3>";
+              }
+              echo "<h4>".$books['page_count']."</h4>";
+              echo $books['author'];?> 
+          </div>
 
-              <?php if (isset($_SESSION['admin']) && $_SESSION['admin']){ ?>
-                <a href="../admin/edit.php?id=<?php echo $ID; ?>">Kleur aanpassen</a>
-              <?php } ?>
-          </main>
+          <?php if (isset($_SESSION['admin']) && $_SESSION['admin']){ ?>
+            <a href="../admin/edit.php?id=<?php echo $ID; ?>">Kleur aanpassen</a>
+          
+            <form action="../admin/backend/descriptionController.php" method="POST">
+              <div class="form-group">
+                <textarea name="description" placeholder="nieuwe descriptie hier"></textarea>
+              </div>
+                <input type="hidden" name="action" value="update">
+                <input type="hidden" name="id" value="<?php echo $id; ?>">
+                <input type="submit" value="aanpassen">
+            </form>
+          <?php } ?>
+        </main>
           <?php require_once '../footer.php'; ?>
       </div>
     </div>
