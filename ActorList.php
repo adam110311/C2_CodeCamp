@@ -32,6 +32,8 @@
                 <div class="Content">
                     <?php foreach ($contents as $content): ?>
                         <div class="Film">
+                            <!-- als er op een naam van een acteur wordt geklikt \
+                            dan word je door gestuurd naar de pagina van de acteur -->
                             <a href="<?php echo $base_url."/acteurs/index.php?id=".$content['id']; ?>"><h2 class="name"><?php echo $content['name'];?></h2></a>
                         </div>
                     <?php endforeach; ?>

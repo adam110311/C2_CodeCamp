@@ -50,7 +50,7 @@
                 echo '<img src="../img/'.$_GET['id'].'-content.jpg" />';
                   echo "<p>".nl2br( $contents['description[songtekst]'])."</p>";?><!---->
                 <?php
-                // zorgt er voor dat er regels tussen komen
+                // veranderd in array
                 if($contents['actors']){
                   echo "<ul>";
                   foreach(explode(", ", $contents['actors']) as $actor){
