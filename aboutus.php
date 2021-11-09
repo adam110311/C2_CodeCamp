@@ -13,11 +13,13 @@
 </head>
 
 <body>
+<!-- dit roept de header.php op -->
     <?php require_once 'header.php'; ?>
     <div class="main">
         <p class="kruimelpad">home/</p>
         <div class="overons">
             <h1>over ons</h1>
+            <!-- laat de img van de map zien en linkt naar google maps als je er op drukt -->
             <div class="map">
                 <a href="https://www.google.nl/maps/place/Koestraat+1,+5223+AG+'s-Hertogenbosch/@51.6973552,5.2935823,15z/data=!4m13!1m7!3m6!1s0x47c6ee66bc48c005:0x4dddc528356e3d4f!2sKoestraat+1,+5223+AG+'s-Hertogenbosch!3b1!8m2!3d51.6973624!4d5.2935999!3m4!1s0x47c6ee66bc48c005:0x4dddc528356e3d4f!8m2!3d51.6973624!4d5.2935999">
                 <img src="img/map.PNG" alt="map van den bosch"></a>
@@ -27,6 +29,7 @@
         </div>
     </div>   
     <?php require_once 'footer.php'; ?>
+    <!-- dit roept footer.php op -->
 </body>
 
 </html>

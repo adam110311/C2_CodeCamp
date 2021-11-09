@@ -22,6 +22,7 @@
     $books = $stmt->fetchAll(PDO::FETCH_ASSOC);
     ?>
     <!--hier eindigt het query om de data op te roepen-->
+    <!-- dit roept de header.php op -->
     <?php require_once 'header.php'; ?>
     <div class="main">
         <p class="kruimelpad">home/</p>
@@ -35,10 +36,12 @@
                         </div>
                     <?php } ?>
                 </div>
+                <!-- de wiki beschrijving -->
                 <div class="book-text">
                     <p>Een boek in traditionele zin is een samengevoegde hoeveelheid papier met tekst, afbeeldingen of allebei. Daarnaast wordt met de term de betreffende informatie, of een soortgelijke verzameling informatie,  aangeduid ('een boek schrijven', 'een boek downloaden').<br><br> Het woord 'boek' is vermoedelijk afkomstig van het Germaanse woord voor beuk, boche. De omslagen van de eerste boeken werden namelijk gemaakt van   een rechthoekig stuk (beuken)hout. Het Griekse woord biblia (boeken) is het meervoud van biblion dat oorspronkelijk 'papyrusje' betekende, het materiaal waarop in de oudheid meestal werd geschreven, en later werd  gebruikt als aanduiding van papier, geschrift en boek(rol). </p>
                 </div>
             </main>
+            <!-- dit roept footer.php op -->
             <?php require_once 'footer.php'; ?>
         </div>
         <!--tot hier word de data in een leesbaar formaat gezet-->

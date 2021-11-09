@@ -22,6 +22,8 @@
     $contents = $stmt->fetchAll(PDO::FETCH_ASSOC);
     ?>
     <!--hier eindigt het query om de data op te roepen-->
+
+    <!-- dit roept de header.php op -->
     <?php require_once 'header.php'; ?>
     <div class="main">
         <p class="kruimelpad">home/</p>
@@ -36,6 +38,7 @@
                     <?php endforeach; ?>
                 </div>
             </main>
+            <!-- dit roept footer.php op -->
             <?php require_once 'footer.php'; ?>
         </div>
     </div>
