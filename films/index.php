@@ -26,7 +26,7 @@
 
 
   <!-- Add your site or application content here -->
-
+<!--hier begint het query om de data op te roepen-->
   <?php
     $id = $_GET['id'];
     require_once '../admin/backend/conn.php';
@@ -35,24 +35,33 @@
     $statement->execute([":id" => $id]);
     $contents = $statement->fetch(PDO::FETCH_ASSOC);
   ?>
+  <!--hier eindigt het query om de data op te roepen-->
+  <!-- dit roept de header.php op -->
     <?php require_once '../header.php'; ?>
     <div class="main">
     <p class="kruimelpad">home/films</p>
+
       <div class="container_content">
+        <!-- met deze lijn code word de achtergrond kleur aangepast als je admin bent  -->
           <main <?php if($contents['colorcode']) echo "style='background: " . str_replace("\'", "\\\'", str_replace('\"', "\\\"", $contents['colorcode'])) . ";'"; ?>>
               <div class="Contentinfo">
+                <!-- laat de content uit de database zien -->
                   <?php echo "<h1 class='title'>".$contents['name']."</h1>";
                   echo '<img src="../img/'.$_GET['id'].'-content.jpg" />';
                   echo $contents['description[songtekst]'];//ik vind het nog steeds stom dat het zo heet   bek dicht XD
                   if($contents['actors']){
                     echo "<ul>";
                     foreach(explode(", ", $contents['actors']) as $actor){?>
+                   
+                   <!--hier begint het query om de data op te roepen--> 
                     <?php 
                     $query = "SELECT * FROM content WHERE id = :id";
                     $statement = $conn->prepare($query);
                     $statement->execute([":id" => $actor]);
                     $contents = $statement->fetch(PDO::FETCH_ASSOC);
                     ?>
+                    <!--hier eindigt het query om de data op te roepen-->
+                     <!-- als je op de naam van de acteur klikt dan ga je naar imdb page -->
                       <li><a href="https://www.imdb.com/?ref_=nv_home"><?php echo($contents['name']); ?></a></li>
                     <?php } ?>
                     </ul>
@@ -62,6 +71,7 @@
               <?php } ?>
               </div>
           </main>
+          <!-- roept de footer.php op -->
           <?php require_once '../footer.php'; ?>
       </div>
     </div>
