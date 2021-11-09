@@ -92,7 +92,7 @@
   /* ==========================================================================
      Author's custom styles
      ========================================================================== */
-
+     /* zet de header hoogte op 4% van de hoogte van het scherm */
      header{
        height: 4vh;
      }
@@ -107,6 +107,7 @@
       text-align: center;
     }
 
+    /* zet de font size van de navbar buttons */
     .Home-links p{
       font-size: 20px;
     }
@@ -123,6 +124,7 @@
       text-align: center;
     }
 
+     /* de wrapper om het content van de paginas */
      .wrapper{
       max-width:1300px;
       margin:0 auto;
@@ -148,19 +150,21 @@
     nav{
       background-color:#2C4251;
     }
-
+     /* wrapper voor de nav */
      nav .wrapper{
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
+    /* styling voor de links in de nav */
     .nav-links{
       display:flex;
       justify-content:space-between;
       width:100%;
     }
 
+    /* styling voor de a elementen in de navbar */
     nav a{
       font-size: 2.67vh;
       color: #fff;
@@ -168,6 +172,7 @@
       border: 1px solid #2C4251;
     }
 
+    /* styling voor de a elementen in de navbar wanneer ze gehovert zijn*/
     nav a:hover{
       border: 1px solid #fff;
       color: #fff;
@@ -260,6 +265,7 @@
       border-color:black;
      }
 
+    /* review sites */
     .review-sites{
       margin-top: 25px;
       margin-bottom: 50px;
@@ -275,6 +281,7 @@
       border-color:black;
     }
 
+    /* text van de boeken */
     .book-text{
       margin-top: 25px;
       padding: 5px 25px 5px;
@@ -285,6 +292,7 @@
       border-color:black;
      }
 
+    /* h2 elementen in content */
     .Content h2{
       text-shadow: 1px 1px white;
     }
