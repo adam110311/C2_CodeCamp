@@ -50,7 +50,12 @@
               echo "<h3>".$books['description']."</h3>";              
               echo "<h4>".$books['page_count']."</h4>";
               echo $books['author'];?> 
-              <!-- hier onder staat een form om de beschrijving van de boeken aan te passen -->
+          </div>
+          <!-- met deze lijn code word de achtergrond kleur aangepast als je admin bent  -->
+          <?php if (isset($_SESSION['admin']) && $_SESSION['admin']){ ?>
+            <a href="../admin/edit.php?id=<?php echo $ID; ?>">Kleur aanpassen</a>
+          
+          <!-- hier onder staat een form om de beschrijving van de boeken aan te passen -->
             <form action="../admin/backend/descriptionController.php" method="POST">
               <div class="form-group">
                 <textarea name="description" placeholder="nieuwe descriptie hier"></textarea>
@@ -59,12 +64,6 @@
                 <input type="hidden" name="id" value="<?php echo $id; ?>">
                 <input type="submit" value="aanpassen">
             </form>
-          </div>
-          <!-- met deze lijn code word de achtergrond kleur aangepast als je admin bent  -->
-          <?php if (isset($_SESSION['admin']) && $_SESSION['admin']){ ?>
-            <a href="../admin/edit.php?id=<?php echo $ID; ?>">Kleur aanpassen</a>
-          
-          
           <?php } ?>
         </main>
         <!-- roept de footer.php op -->
