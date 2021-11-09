@@ -26,7 +26,7 @@
 
 
   <!-- Add your site or application content here -->
-
+  <!--hier begint het query om de data op te roepen-->
   <?php
     $id = $_GET['id'];
     require_once '../admin/backend/conn.php';
@@ -35,12 +35,15 @@
     $statement->execute([":id" => $id]);
     $books = $statement->fetch(PDO::FETCH_ASSOC);
   ?>
+  <!--hier eindigt het query om de data op te roepen-->
+  <!-- dit roept de header.php op -->
     <?php require_once '../header.php'; ?>
     <div class="main">
       <p class="kruimelpad">home/boeken</p>
       <div class="container_content">
 
         <main>
+          <!-- laat de content uit de database zien -->
           <div class="Contentinfo">
               <?php echo "<h1 class='title'>".$books['name']."</h1>";
               echo '<img src="../img/'.$_GET['id'].'-book.jpg" />';
@@ -48,10 +51,11 @@
               echo "<h4>".$books['page_count']."</h4>";
               echo $books['author'];?> 
           </div>
-
+          <!-- met deze lijn code word de achtergrond kleur aangepast als je admin bent  -->
           <?php if (isset($_SESSION['admin']) && $_SESSION['admin']){ ?>
             <a href="../admin/edit.php?id=<?php echo $ID; ?>">Kleur aanpassen</a>
           
+          <!-- hier onder staat een form om de beschrijving van de boeken aan te passen -->
             <form action="../admin/backend/descriptionController.php" method="POST">
               <div class="form-group">
                 <textarea name="description" placeholder="nieuwe descriptie hier"></textarea>
@@ -62,6 +66,7 @@
             </form>
           <?php } ?>
         </main>
+        <!-- roept de footer.php op -->
           <?php require_once '../footer.php'; ?>
       </div>
     </div>
