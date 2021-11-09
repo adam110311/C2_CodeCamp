@@ -1,18 +1,18 @@
 <?php
 
 
-
+//check of een email adres in de users table staat
 function emailExists($link, $email ){
     require 'link.php';
     $sql = "SELECT * FROM users WHERE email = ?;";
     $stmt = mysqli_stmt_init($link);
     if (!mysqli_stmt_prepare($stmt, $sql)){
-        echo ("email bestaat al");        
+        echo ("email bestaat al");
     }
     mysqli_stmt_bind_param($stmt, "s", $email);
     mysqli_stmt_execute($stmt);
 
-    $resultData = mysqli_stmt_get_result($stmt);    
+    $resultData = mysqli_stmt_get_result($stmt);
 
     if ($row = mysqli_fetch_assoc($resultData)){
         return $row;
@@ -23,13 +23,13 @@ function emailExists($link, $email ){
     }
     mysqli_stmt_close($stmt);
 }
-
+//check of een username in de users table staat
 function usernameExists($link, $username ){
     require 'link.php';
     $sql = "SELECT * FROM users WHERE username = ?;";
     $stmt = mysqli_stmt_init($link);
     if (!mysqli_stmt_prepare($stmt, $sql)){
-        echo ("username bestaat al");        
+        echo ("username bestaat al");
     }
     mysqli_stmt_bind_param($stmt, "s", $username);
     mysqli_stmt_execute($stmt);
@@ -45,13 +45,13 @@ function usernameExists($link, $username ){
     }
     mysqli_stmt_close($stmt);
 }
-
+//maak een nieuwe user aan
 function createUser($link, $username, $email, $password){
     require 'link.php';
     $sql = "INSERT INTO users (username, email, password) VALUES (?, ?, ?);";
     $stmt = mysqli_stmt_init($link);
     if (!mysqli_stmt_prepare($stmt, $sql)){
-        echo ("error kan gebruiker niet aanmaken");        
+        echo ("error kan gebruiker niet aanmaken");
     }
 
     $hashedpassword = password_hash($password, PASSWORD_DEFAULT);
@@ -60,6 +60,6 @@ function createUser($link, $username, $email, $password){
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
     header("location: ../../index.php?error=none");
-    
+
 }
 

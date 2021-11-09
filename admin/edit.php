@@ -25,11 +25,11 @@ require_once 'backend/config.php';
 
   <meta name="theme-color" content="#fafafa">
 
-  
+
 </head>
 <body>
     <?php require_once '../header.php';
-    
+
     $id = $_GET['id'];
     require_once 'backend/conn.php';
     $query = "SELECT * FROM content WHERE id = :id";
@@ -43,17 +43,17 @@ require_once 'backend/config.php';
     ?>
     <div class="login">
         <section class="login-form">
-            <h2><?php echo $contents['name']; ?></h2>
+            <h2><?php echo $contents['name']; ?></h2><!--laat de naam zien van de post-->
             <form action="backend/setcolorcode.php" method="POST">
                 <div class="form-group">
                     <label for="color">Kleur:</label>
-                    <input type="text" name="color" placeholder="color" value="<?php echo $contents['colorcode']; ?>">
+                    <input type="text" name="color" placeholder="color" value="<?php echo $contents['colorcode']; ?>"><!--kleur aanpas textblok-->
                 </div>
                 <input type="hidden" name="id" value="<?php echo $id; ?>">
                 <div class="form-group">
                     <input type="submit" value="Kleur aanpassen">
                 </div>
-                
+
             </form>
         </section>
     </div>
