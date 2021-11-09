@@ -47,7 +47,7 @@
                   echo "<h1 class='title'>".$contents['actors']."</h1>";
                   echo "<h2 class='title'>".$contents['name']."</h2>";
                   echo '<img src="../img/'.$_GET['id'].'-content.jpg" />';
-                  echo nl2br( $contents['description[songtekst]']);
+                  echo "<p>".nl2br( $contents['description[songtekst]'])."</p>";
                 ?>
               </div>
               <?php if (isset($_SESSION['admin']) && $_SESSION['admin']){ ?>

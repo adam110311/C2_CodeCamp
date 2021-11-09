@@ -43,7 +43,7 @@
               <div class="Contentinfo">
                 <?php echo "<h1 class='title'>".$contents['name']."</h1>";
                 echo '<img src="../img/'.$_GET['id'].'-content.jpg" />';
-                  echo $contents['description[songtekst]'];?>
+                  echo "<p>".nl2br( $contents['description[songtekst]'])."</p>";?>
                 <?php
                 if($contents['actors']){
                   echo "<ul>";
