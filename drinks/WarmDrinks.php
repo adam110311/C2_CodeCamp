@@ -50,7 +50,7 @@
       
       <p class="kruimelpad">home/drinks</p>
       <div class="container_content">        
-            <div class="Contentinfo">
+            
               <div class="Content">
                 <!-- als er op koffie word geklikt dan wordt je door gestuurt naar george clooney
                 en ander laat het gewoon de warmen dranken zien -->
@@ -62,7 +62,7 @@
                   }?>                 
                 <?php endforeach; ?>
               </div>
-            </div>    
+             
             <!-- roept de footer.php op -->  
           <?php require_once '../footer.php'; ?>
       </div>
