@@ -55,6 +55,7 @@
           <?php if (isset($_SESSION['admin']) && $_SESSION['admin']){ ?>
             <a href="../admin/edit.php?id=<?php echo $ID; ?>">Kleur aanpassen</a>
           
+          <!-- hier onder staat een form om de beschrijving van de boeken aan te passen -->
             <form action="../admin/backend/descriptionController.php" method="POST">
               <div class="form-group">
                 <textarea name="description" placeholder="nieuwe descriptie hier"></textarea>
@@ -65,6 +66,7 @@
             </form>
           <?php } ?>
         </main>
+        <!-- roept de footer.php op -->
           <?php require_once '../footer.php'; ?>
       </div>
     </div>
