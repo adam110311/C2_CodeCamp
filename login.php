@@ -28,15 +28,21 @@ require_once 'admin/backend/config.php';
 
 </head>
 <body>
+    <!-- roept naar de header.php toe -->
     <?php require_once 'header.php';?>
     <div class="main">
+        <!-- laat kruimelpad zien op de pagina -->
         <p class="kruimelpad">home/</p>
+
         <?php
+        // checkt of het inloggen wel goedgaat
         if(isset($_GET['msg']))
         {
             echo "<div class='msg'>" . $_GET['msg'] . "</div>";
         }
         ?>
+
+        <!-- hij laat nu 3 input types zien voor je gebruikersnaam/wachtwoord/en de registeer knop -->
         <div class="login">
             <section class="login-form">
                 <h2>inloggen</h2>
@@ -57,5 +63,6 @@ require_once 'admin/backend/config.php';
             </section>
         </div>
     </div>
+    <!-- roept footer.php op -->
     <?php require_once 'footer.php'; ?>
 </body>
