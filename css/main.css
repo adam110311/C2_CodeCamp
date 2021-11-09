@@ -298,7 +298,11 @@
     }
 
     .Contentinfo{
-      text-shadow: white 0px 0px 3px ;
+      border: solid white;
+      background-color: white;
+      border-radius: 25px;
+      box-shadow: 5px 5px 10px 3px black
+      
     }
     .Contentinfo img{
       width: 300px;
