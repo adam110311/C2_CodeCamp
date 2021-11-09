@@ -21,15 +21,17 @@
 
   <meta name="theme-color" content="#fafafa">
 
-  
+
 </head>
 <body>
+    <!--Require de header-->
     <?php require_once 'header.php'; ?>
     <div class="main">
         <p class="kruimelpad">home/login</p>
         <div class="login">
             <section class="signup-form">
                 <h2>registreren</h2>
+              <!--Een form om te registreren-->
                 <form action="admin/backend/signupController.php" method="POST">
                     <div class="form-group">
                         <label for="username">Gebruikersnaam:</label>
@@ -45,10 +47,11 @@
                     </div>
                     <div class="form-group">
                         <button type="submit" name="submit">registreer</button>
-                    </div>                
+                    </div>
                 </form>
             </section>
         </div>
     </div>
+    <!--Require de footer-->
         <?php require_once 'footer.php'; ?>
 </body>
