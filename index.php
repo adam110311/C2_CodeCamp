@@ -58,22 +58,22 @@
   <!-- img met links naar hun pagina's-->
   <div class="Home-links">
     <div class="links">
-      <a href="SongList.php"><img src="img/songs.jpeg" alt="bing bong theurum"><p>Liedjes</p></a>
+      <a href="SongList.php"><img src="img/songs.jpeg" alt="liedjes"><p>Liedjes</p></a>
     </div>
     <div class="links">
-      <a href="ToolList.php"><img src="img/tools.jpeg" alt="bing bong theurum"><p>Gereedschap</p></a>
+      <a href="ToolList.php"><img src="img/tools.jpeg" alt="gereedschap"><p>Gereedschap</p></a>
     </div>
     <div class="links">
-      <a href="FilmList.php"><img src="img/films.jpeg" alt="bing bong theurum"><p>Films</p></a>
+      <a href="FilmList.php"><img src="img/films.jpeg" alt="films"><p>Films</p></a>
     </div>
     <div class="links">
-      <a href="BookList.php"><img src="img/book.jpeg" alt="bing bong theurum"><p>Boeken</p></a>
+      <a href="BookList.php"><img src="img/book.jpeg" alt="boeken"><p>Boeken</p></a>
       </div>
       <div class="links">
-      <a href="ActorList.php"><img src="img/actors.jpg" alt="bing bong theurum"><p>Acteurs</p></a>
+      <a href="ActorList.php"><img src="img/actors.jpg" alt="acteurs"><p>Acteurs</p></a>
     </div>
     <div class="links">
-      <a href="Drinks.php"><img src="img/drinks.jpeg" alt="bing bong theurum"><p>Dranken</p></a>
+      <a href="Drinks.php"><img src="img/drinks.jpeg" alt="drinks"><p>Dranken</p></a>
     </div>
   </div>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
