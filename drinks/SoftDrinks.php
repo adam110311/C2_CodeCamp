@@ -26,6 +26,7 @@
 
 
   <!-- Add your site or application content here -->
+  <!--hier begint het query om de data op te roepen-->
   <?php
     require_once '../admin/backend/conn.php';
     $query = "SELECT * FROM drinks WHERE drink_type='soft_drinks'";
@@ -33,11 +34,16 @@
     $stmt->execute();
     $drinks = $stmt->fetchAll(PDO::FETCH_ASSOC);
   ?>
+  <!--hier eindigt het query om de data op te roepen-->
+   <!-- dit roept de header.php op -->
     <?php require_once '../header.php'; ?>
     <div class="main">
       <p class="kruimelpad">home/drinks</p>
-      <div class="container_content">        
+
+      <div class="container_content">       
             <div class="Content">
+              <!-- als er op cola word geklikt dan wordt je door gestuurt naar Roger Moore
+                en ander laat het gewoon de frisdranken zien --> 
               <?php foreach ($drinks as $drink): ?>
                   <?php if($drink['name'] == "cola"){
                       ?><h2> <a href="../acteurs/index.php?id=24"><?php echo $drink['name'];?></a></h2><?php     
@@ -45,7 +51,8 @@
                       ?><h2 class="name"><?php echo $drink['name'];?></h2><?php
                   }?>
                 <?php endforeach; ?>
-            </div>      
+            </div> 
+             <!-- roept de footer.php op -->     
           <?php require_once '../footer.php'; ?>
       </div>
     </div>

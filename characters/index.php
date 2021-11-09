@@ -26,7 +26,7 @@
 
 
   <!-- Add your site or application content here -->
-
+  <!--hier begint het query om de data op te roepen-->
   <?php
     $id = $_GET['id'];
     require_once '../admin/backend/conn.php';
@@ -37,28 +37,31 @@
   ?>
 </body>
 <body>
+  <!--hier eindigt het query om de data op te roepen-->
+  <!-- dit roept de header.php op -->
     <?php require_once '../header.php'; ?>
+    <!-- met deze lijn code word de achtergrond kleur aangepast als je admin bent  -->
     <div class="main"  <?php if($contents['colorcode']) echo "style='background: " . str_replace("\'", "\\\'", str_replace('\"', "\\\"", $contents['colorcode'])) . ";'"; ?>>
       <p class="kruimelpad">home/films/characters</p>
       <div class="container_content">
           <main >
               <div class="Contentinfo"> 
                 <?php 
+                // laat de content uit de database zien
                   echo "<h1 class='title'>".$contents['actors']."</h1>";
                   echo '<img src="../img/'.$_GET['id'].'-content.jpg" />';
                   echo "<h2 class='title'>".$contents['name']."</h2>";
                   echo $contents['description[songtekst]'];
                 ?>
               </div>
+              <!-- met deze lijn code word de achtergrond kleur aangepast als je admin bent  -->
               <?php if (isset($_SESSION['admin']) && $_SESSION['admin']){ ?>
                 <a href="../admin/edit.php?id=<?php echo $id; ?>">Kleur aanpassen</a>
               <?php } ?>
           </main>
+          <!-- roept de footer.php op -->
           <?php require_once '../footer.php'; ?>
-      
-      </div>
-      <?php require_once '../footer.php'; ?>
-    </div>
+    
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

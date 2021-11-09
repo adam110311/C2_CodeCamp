@@ -26,6 +26,7 @@
 
 
   <!-- Add your site or application content here -->
+  <!--hier begint het query om het warme drankes op te roepen-->
   <?php
     require_once '../admin/backend/conn.php';
     $query = "SELECT * FROM drinks WHERE drink_type='warm_drinks'";
@@ -33,6 +34,8 @@
     $stmt->execute();
     $drinks = $stmt->fetchAll(PDO::FETCH_ASSOC);
   ?>
+   <!--hier eindigt het query om de data op te roepen-->
+  <!--hier begint het query om de data op te roepen-->
   <?php
     require_once '../admin/backend/conn.php';
     $query = "SELECT * FROM content";
@@ -40,6 +43,8 @@
     $stmt->execute();
     $actors = $stmt->fetchAll(PDO::FETCH_ASSOC);
   ?>
+   <!--hier eindigt het query om de data op te roepen-->
+   <!-- dit roept de header.php op -->
     <?php require_once '../header.php'; ?>
     <div class="main">
       
@@ -47,6 +52,8 @@
       <div class="container_content">        
             <div class="Contentinfo">
               <div class="Content">
+                <!-- als er op koffie word geklikt dan wordt je door gestuurt naar george clooney
+                en ander laat het gewoon de warmen dranken zien -->
                 <?php foreach ($drinks as $drink): ?>                    
                   <?php if($drink['name'] == "koffee"){
                       ?><h2> <a href="../acteurs/index.php?id=23"><?php echo $drink['name'];?></a></h2><?php     
@@ -55,7 +62,8 @@
                   }?>                 
                 <?php endforeach; ?>
               </div>
-            </div>      
+            </div>    
+            <!-- roept de footer.php op -->  
           <?php require_once '../footer.php'; ?>
       </div>
     </div>
