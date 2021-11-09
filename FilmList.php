@@ -22,6 +22,7 @@
     $contents = $stmt->fetchAll(PDO::FETCH_ASSOC);
     ?>
     <!--hier eindigt het query om de data op te roepen-->
+    <!-- dit roept de header.php op -->
     <?php require_once 'header.php'; ?>
     <div class="main">
         <p class="kruimelpad">home/</p>
@@ -43,6 +44,7 @@
                         </div>
                     <?php endforeach; ?>                        
                 </div>
+                <!-- link naar de externe websites die moesten -->
                 <div class="review-sites">
                     <a href="https://www.imdb.com/"><h2>Imdb</h2></a>
                     <a href="https://www.videoland.com/nl/"><h2>Videoland</h2></a>
@@ -50,6 +52,7 @@
                 </div>
 
             </main>
+            <!-- dit roept footer.php op -->
             <?php require_once 'footer.php'; ?>
         </div>
     </div>

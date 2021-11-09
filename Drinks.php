@@ -23,12 +23,14 @@
     $drinks = $stmt->fetchAll(PDO::FETCH_ASSOC);
     ?>
     <!--hier eindigt het query om de data op te roepen-->
+    <!-- dit roept de header.php op -->
     <?php require_once 'header.php'; ?>
     <div class="main">
         <p class="kruimelpad">home/</p>
         <!--hier word de data in een leesbaar formaat gezet-->
         <div class="container_content">
             <main>
+                <!-- links naar de specifieke catogorie -->
                 <div class="Content">
                     <a href="drinks/WarmDrinks.php"><h2>warme dranken</h2></a>
                     <a href="drinks/SoftDrinks.php"><h2>frisdranks</h2></a>
@@ -38,6 +40,7 @@
         </div>
     </div>
     <!--tot hier word de data in een leesbaar formaat gezet-->
+    <!-- dit roept footer.php op -->
     <?php require_once 'footer.php'; ?>
 </body>
 
