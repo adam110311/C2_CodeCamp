@@ -29,9 +29,10 @@
 <header>
     <nav>
         <div class="wrapper">
-            <!-- header with link and making sure you can go back using the header-->
+          
             <div class="nav-links">
               <?php
+              //checkt of het in XAMPP zit gebruikt het als base directory
               if(is_dir($_SERVER['DOCUMENT_ROOT'] . '/c2_codecamp')){
                 require_once $_SERVER['DOCUMENT_ROOT'] . "/c2_codecamp/backend/config.php";
               }
@@ -39,7 +40,7 @@
                 require_once $_SERVER['DOCUMENT_ROOT'] . "/backend/config.php";
               }
               ?>
-
+                <!-- hier staan alle links die in de navbar staan -->
                 <a href="<?php echo $baseurl; ?>index.php"><img src="<?php echo $baseurl; ?>/img/codecamp.png" style="height: 3vh;" alt="codecamp logo"></a>
                 <a href="<?php echo $baseurl; ?>SongList.php">Liedjes</a>
                 <a href="<?php echo $baseurl; ?>FilmList.php">Films</a>
@@ -47,7 +48,11 @@
                 <a href="<?php echo $baseurl; ?>BookList.php">Boeken</a>
                 <a href="<?php echo $baseurl; ?>Drinks.php">Dranken</a>
                 <a href="<?php echo $baseurl; ?>aboutus.php">Over ons</a>
+
+
                 <?php
+                // dit zijn de links naar de login/out pagina het check ook met session of de persoon is ingelogt
+                // zo ja dan staat er login of out
                 if(isset($_SESSION['user_id']))
                 {
                   ?>

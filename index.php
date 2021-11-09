@@ -32,13 +32,14 @@
       require_once 'admin/backend/config.php';
       ?>
 
-      <!-- you can see the time on the page -->
+      <!-- zorgt dat de klok refreshed -->
       <script type="text/javascript">
         function display_c() {
-          var refresh = 1000; // Refresh rate in milli seconds
+          var refresh = 1000; // zorgt dat die elke milli seconde refreshed
           mytime = setTimeout('display_ct()', refresh)
         }
 
+// script voor de klok
     function display_ct() {
       var x = new Date()
       var x1 = x.getDate() + "/" + (x.getMonth() + 1) + "/" + x.getFullYear();
@@ -47,14 +48,14 @@
       display_c();
     }
   </script>
-  <!-- The clock on the page -->
+  <!-- laat de klok op de pagina zien -->
   <div class="tijd">
     <body onload=display_ct();>
       <span id='ct'></span>
   </div>
   <!-- Add your site or application content here -->
 
-  <!-- img with link to the pages-->
+  <!-- img met links naar hun pagina's-->
   <div class="Home-links">
     <div class="links">
       <a href="SongList.php"><img src="img/songs.jpeg" alt="bing bong theurum"><p>Liedjes</p></a>
@@ -86,6 +87,7 @@
       </script>
       <script src="https://www.google-analytics.com/analytics.js" async></script>
     </div>
+    <!-- roept naar footer.php -->
     <?php include_once 'footer.php'; ?>
 
 </body>

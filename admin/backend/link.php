@@ -1,7 +1,7 @@
 <?php
 
 
-
+//variables for database connection
 $serverName = "localhost";
 $dBUsername = "root";
 $dBPassword = "";
