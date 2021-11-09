@@ -66,6 +66,7 @@
                     <?php } ?>
                     </ul>
                   <?php } ?>
+                  <!-- admin kan kleur aanpassen -->
                   <?php if (isset($_SESSION['admin']) && $_SESSION['admin']){ ?>
                 <a href="../admin/edit.php?id=<?php echo $id; ?>">Kleur aanpassen</a>
               <?php } ?>

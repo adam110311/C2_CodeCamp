@@ -26,6 +26,7 @@
 
 
   <!-- Add your site or application content here -->
+  <!--hier begint het query om de data op te roepen-->
 
   <?php
     $id = $_GET['id'];
@@ -35,16 +36,21 @@
     $statement->execute([":id" => $id]);
     $contents = $statement->fetch(PDO::FETCH_ASSOC);
   ?>
+  <!--hier eindigt het query om de data op te roepen-->
+  <!-- dit roept de header.php op -->
     <?php require_once '../header.php'; ?>
     <div class="main">
       <p class="kruimelpad">home/tools</p>
       <div class="container_content">
+        <!-- met deze lijn code word de achtergrond kleur aangepast als je admin bent  -->
           <main <?php if($contents['colorcode']) echo "style='background: " . str_replace("\'", "\\\'", str_replace('\"', "\\\"", $contents['colorcode'])) . ";'"; ?>>
               <div class="Contentinfo">
+                <!-- laat de content uit de database zien -->
                 <?php echo "<h1 class='title'>".$contents['name']."</h1>";
                 echo '<img src="../img/'.$_GET['id'].'-content.jpg" />';
                   echo $contents['description[songtekst]'];?>
                 <?php
+                // zorgt er voor dat er regels tussen komen
                 if($contents['actors']){
                   echo "<ul>";
                   foreach(explode(", ", $contents['actors']) as $actor){
@@ -54,10 +60,12 @@
                   $contents = $statement->fetch(PDO::FETCH_ASSOC);
                   }}?>
               </div>
+              <!-- met deze lijn code word de achtergrond kleur aangepast als je admin bent  -->
               <?php if (isset($_SESSION['admin']) && $_SESSION['admin']){ ?>
                 <a href="../admin/edit.php?id=<?php echo $id; ?>">Kleur aanpassen</a>
               <?php } ?>
           </main>
+          <!-- roept de footer.php op -->
           <?php require_once '../footer.php'; ?>
       </div>
     </div>
