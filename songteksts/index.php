@@ -42,12 +42,12 @@
       <p class="kruimelpad">home/songs</p>
       <div class="container_content">
           <main >
-              <div class="Contentinfo"> 
-                <?php 
+              <div class="Contentinfo">
+                <?php
                   echo "<h1 class='title'>".$contents['actors']."</h1>";
                   echo "<h2 class='title'>".$contents['name']."</h2>";
                   echo '<img src="../img/'.$_GET['id'].'-content.jpg" />';
-                  echo $contents['description[songtekst]'];
+                  echo nl2br( $contents['description[songtekst]']);
                 ?>
               </div>
               <?php if (isset($_SESSION['admin']) && $_SESSION['admin']){ ?>
@@ -55,7 +55,7 @@
               <?php } ?>
           </main>
           <?php require_once '../footer.php'; ?>
-      
+
       </div>
       <?php require_once '../footer.php'; ?>
     </div>
