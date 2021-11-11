@@ -319,6 +319,7 @@
     }
 
     .Contentinfo{
+      margin-bottom: 35px;
       display: flex;
       flex-direction: column;
       text-align: center;
@@ -335,6 +336,17 @@
       display: flex;
       text-align: center;
       justify-content: center;
+    }
+    .kleur_aanpassen{
+      border: solid white;
+      background-color: white;
+      border-radius: 25px;
+      box-shadow: 5px 5px 10px 3px black;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      text-decoration: none;
     }
     /*=======================================================================================================*/
     /* hier eindigt de styling voor de main pagina's */

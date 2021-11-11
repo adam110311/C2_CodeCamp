@@ -67,10 +67,11 @@
                     </ul>
                   <?php } ?>
                   <!-- admin kan kleur aanpassen -->
+              </div>
+              <div class ="kleur_aanpassen">
                   <?php if (isset($_SESSION['admin']) && $_SESSION['admin']){ ?>
                 <a href="../admin/edit.php?id=<?php echo $id; ?>">Kleur aanpassen</a>
-              <?php } ?>
-              </div>
+                <?php } ?>
           </main>
           <!-- roept de footer.php op -->
           <?php require_once '../footer.php'; ?>

@@ -52,8 +52,10 @@
               echo $books['author'];?> 
           </div>
           <!-- met deze lijn code word de achtergrond kleur aangepast als je admin bent  -->
+          <div class ="kleur_aanpassen">
           <?php if (isset($_SESSION['admin']) && $_SESSION['admin']){ ?>
             <a href="../admin/edit.php?id=<?php echo $ID; ?>">Kleur aanpassen</a>
+          </div>
           
           <!-- hier onder staat een form om de beschrijving van de boeken aan te passen -->
             <form action="../admin/backend/descriptionController.php" method="POST">
