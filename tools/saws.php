@@ -42,7 +42,7 @@
                 <div class="Content">
                     <?php foreach ($contents as $content){ ?>
                         <div class="Tools">
-                            <a href="<?php echo $base_url."/index.php?id=".$content['id']; ?>"><h2 class="name"><?php echo $content['name']; ?></h2></a>
+                            <a href="<?php echo $base_url."../tools/index.php?id=".$content['id']; ?>"><h2 class="name"><?php echo $content['name']; ?></h2></a>
                         </div>
                     <?php } ?>
                 </div>
