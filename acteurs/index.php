@@ -45,8 +45,10 @@
                   echo '<img src="../img/'.$_GET['id'].'-content.jpg" />';
                   echo $contents['description[songtekst]'];?>
               </div>
+              <div class ="kleur_aanpassen">
               <?php if (isset($_SESSION['admin']) && $_SESSION['admin']){ ?>
                 <a href="../admin/edit.php?id=<?php echo $id; ?>">Kleur aanpassen</a>
+              </div>
               <?php } ?>
           </main>
           <?php require_once '../footer.php'; ?>

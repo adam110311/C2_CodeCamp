@@ -56,8 +56,10 @@
                 ?>
               </div>
               <!-- met deze lijn code word de achtergrond kleur aangepast als je admin bent  -->
+              <div class ="kleur_aanpassen">
               <?php if (isset($_SESSION['admin']) && $_SESSION['admin']){ ?>
                 <a href="../admin/edit.php?id=<?php echo $id; ?>">Kleur aanpassen</a>
+                </div>
               <?php } ?>
           </main>
           <!-- roept de footer.php op -->
