@@ -35,6 +35,7 @@
                             <a href="<?php echo $base_url."/tools/index.php?id=".$content['id']; ?>"><h2 class="name"><?php echo $content['name']; ?></h2></a>
                         </div>
                     <?php } ?>
+                    <a href="<?php echo $base_url."/tools/saws.php?id=".$content['id']; ?>"><h2 class="name">zagen</h2></a>
                 </div>
             </main>
             <!-- dit roept footer.php op -->

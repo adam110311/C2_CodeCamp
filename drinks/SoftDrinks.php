@@ -37,11 +37,11 @@
   <!--hier eindigt het query om de data op te roepen-->
    <!-- dit roept de header.php op -->
     <?php require_once '../header.php'; ?>
-    <div class="main">
+    <div class="main"  style="background-color:orange;">
       <p class="kruimelpad">home/drinks</p>
 
       <div class="container_content">       
-            <div class="Content">
+            <div class="Content"  style="background-color:white;">
               <!-- als er op cola word geklikt dan wordt je door gestuurt naar Roger Moore
                 en ander laat het gewoon de frisdranken zien --> 
               <?php foreach ($drinks as $drink): ?>
