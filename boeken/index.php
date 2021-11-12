@@ -20,21 +20,26 @@
   <link rel="stylesheet" href="<?php echo $baseurl; ?>css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+
+  <?php
+  $id = $_GET['id'];
+  require_once '../admin/backend/conn.php';
+  $query = "SELECT * FROM content WHERE id = $id";
+  $statement = $conn->prepare($query);
+  $statement->execute();
+  $contents = $statement->fetch(PDO::FETCH_ASSOC);
+  ?>
+  <style>
+    .main{
+      background: <?php echo str_replace("\'", "\\\'", str_replace('\"', "\\\"", $contents['colorcode'])) ?>;
+    }
+  </style>
 </head>
 
 <body>
 
 
   <!-- Add your site or application content here -->
-  <!--hier begint het query om de data op te roepen-->
-  <?php
-    $id = $_GET['id'];
-    require_once '../admin/backend/conn.php';
-    $query = "SELECT * FROM books WHERE id = :id";
-    $statement = $conn->prepare($query);
-    $statement->execute([":id" => $id]);
-    $books = $statement->fetch(PDO::FETCH_ASSOC);
-  ?>
   <!--hier eindigt het query om de data op te roepen-->
   <!-- dit roept de header.php op -->
     <?php require_once '../header.php'; ?>
@@ -47,16 +52,16 @@
           <div class="Contentinfo">
               <?php echo "<h1 class='title'>".$books['name']."</h1>";
               echo '<img src="../img/'.$_GET['id'].'-book.jpg" />';
-              echo "<h3>".$books['description']."</h3>";              
+              echo "<h3>".$books['description']."</h3>";
               echo "<h4>".$books['page_count']."</h4>";
-              echo $books['author'];?> 
+              echo $books['author'];?>
           </div>
           <!-- met deze lijn code word de achtergrond kleur aangepast als je admin bent  -->
           <div class ="kleur_aanpassen">
           <?php if (isset($_SESSION['admin']) && $_SESSION['admin']){ ?>
             <a href="../admin/edit.php?id=<?php echo $ID; ?>">Kleur aanpassen</a>
           </div>
-          
+
           <!-- hier onder staat een form om de beschrijving van de boeken aan te passen -->
             <form action="../admin/backend/descriptionController.php" method="POST">
               <div class="form-group">

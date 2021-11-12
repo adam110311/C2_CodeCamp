@@ -20,27 +20,32 @@
   <link rel="stylesheet" href="<?php echo $baseurl; ?>css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+
+  <?php
+  $id = $_GET['id'];
+  require_once '../admin/backend/conn.php';
+  $query = "SELECT * FROM content WHERE id = $id";
+  $statement = $conn->prepare($query);
+  $statement->execute();
+  $contents = $statement->fetch(PDO::FETCH_ASSOC);
+  ?>
+  <style>
+    .main{
+      background: <?php echo str_replace("\'", "\\\'", str_replace('\"', "\\\"", $contents['colorcode'])) ?>;
+    }
+  </style>
 </head>
 
 <body>
 
 
   <!-- Add your site or application content here -->
-
-  <?php
-    $id = $_GET['id'];
-    require_once '../admin/backend/conn.php';
-    $query = "SELECT * FROM content WHERE id = :id";
-    $statement = $conn->prepare($query);
-    $statement->execute([":id" => $id]);
-    $contents = $statement->fetch(PDO::FETCH_ASSOC);
-  ?>
     <?php require_once '../header.php'; ?>
-    <div class="main">      
+    <div class="main">
       <p class="kruimelpad">home/films/acteurs</p>
       <div class="container_content">
           <main >
-              <div class="Contentinfo"> 
+              <div class="Contentinfo">
                   <?php echo "<h1 class='title'>".$contents['name']."</h1>";
                   echo '<img src="../img/'.$_GET['id'].'-content.jpg" />';
                   echo $contents['description[songtekst]'];?>

@@ -18,6 +18,20 @@
   <?php include_once "../backend/config.php";?>
   <link rel="stylesheet" href="<?php echo $baseurl; ?>css/normalize.css">
   <link rel="stylesheet" href="<?php echo $baseurl; ?>css/main.css">
+  <!--hier begint het query om de data op te roepen-->
+  <?php
+  $id = $_GET['id'];
+  require_once '../admin/backend/conn.php';
+  $query = "SELECT * FROM content WHERE id = :id";
+  $statement = $conn->prepare($query);
+  $statement->execute([":id" => $id]);
+  $contents = $statement->fetch(PDO::FETCH_ASSOC);
+  ?>
+  <style>
+    .main{
+      background: <?php echo str_replace("\'", "\\\'", str_replace('\"', "\\\"", $contents['colorcode'])) ?>;
+    }
+  </style>
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -26,15 +40,6 @@
 
 
   <!-- Add your site or application content here -->
-<!--hier begint het query om de data op te roepen-->
-  <?php
-    $id = $_GET['id'];
-    require_once '../admin/backend/conn.php';
-    $query = "SELECT * FROM content WHERE id = :id";
-    $statement = $conn->prepare($query);
-    $statement->execute([":id" => $id]);
-    $contents = $statement->fetch(PDO::FETCH_ASSOC);
-  ?>
   <!--hier eindigt het query om de data op te roepen-->
   <!-- dit roept de header.php op -->
     <?php require_once '../header.php'; ?>
@@ -52,9 +57,9 @@
                   if($contents['actors']){
                     echo "<ul>";
                     foreach(explode(", ", $contents['actors']) as $actor){?>
-                   
-                   <!--hier begint het query om de data op te roepen--> 
-                    <?php 
+
+                   <!--hier begint het query om de data op te roepen-->
+                    <?php
                     $query = "SELECT * FROM content WHERE id = :id";
                     $statement = $conn->prepare($query);
                     $statement->execute([":id" => $actor]);
